@@ -1,0 +1,9 @@
+{
+  "name": "remco-homepage",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "serve": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy"
+  }
+}

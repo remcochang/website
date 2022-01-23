@@ -1,6 +1,8 @@
 courses/
+dist/
 publications/
 talks/
+.DS_Store
 *.pdf
 !vita.pdf
 *.mp4
