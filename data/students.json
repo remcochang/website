@@ -1,0 +1,790 @@
+{
+      "Current PhD Students and Post-Docs": [
+	      {
+		        "name": "Assaf Benchetrit",
+		        "type": "PhD",
+		        "image": "assaf.jpg",
+		        "url": "https://cola.unh.edu/person/assaf-benchetrit",
+		        "startdate": 2021,
+		        "enddate": null,
+		        "employment": null,
+		        "distinctions": null
+		      },
+	      {
+		        "name": "Camelia Brumar",
+		        "type": "PhD",
+		        "university": "Tufts",
+		        "image": "camelia.jpg",
+		        "url": "https://kamibrumi.github.io/",
+		        "startdate": 2020,
+		        "enddate": null,
+		        "employment": null,
+		        "distinctions": [
+			            {
+					          "type": "Internship",
+					          "title": "Alife Health",
+					          "year": 2021
+					        },
+			            {
+					          "type": "Award",
+					          "title": "Third place in the International Major League Hacking Hackathon",
+					          "year": 2020
+					        }
+
+			          ]
+		      },
+	      {
+		        "name": "Brian Montambault",
+		        "type": "PhD",
+		        "image": "brian.jpg",
+		        "url": null,
+		        "startdate": 2020,
+		        "enddate": null,
+		        "employment": null,
+		        "distinctions": [
+			            {
+					          "type": "Internship",
+					          "title": "SSI Group",
+					          "year": 2021
+					        }
+			          ]
+		      },
+	      {
+		        "name": "Gabriel Appleby",
+		        "type": "PhD",
+		        "image": "gabe.jpg",
+		        "url": "https://scholar.google.com/citations?user=HLKapRIAAAAJ&hl=en",
+		        "startdate": 2018,
+		        "enddate": null,
+		        "employment": null,
+		        "distinctions": [
+			            {
+					          "type": "Internship",
+					          "title": "Novartis",
+					          "year": 2021
+					        }
+			          ]
+		      },
+	      {
+		        "name": "Ashley Suh",
+		        "type": "PhD",
+		        "image": "suh.jpg",
+		        "url": "https://www.eecs.tufts.edu/~asuh/",
+		        "startdate": 2018,
+		        "enddate": null,
+		        "employment": null,
+		        "distinctions": [
+			            {
+					          "type": "Internship",
+					          "title": "Novartis",
+					          "year": 2021
+					        },
+			            {
+					          "type": "Award",
+					          "title": "NSF NRT Fellowship",
+					          "year": 2021
+					        },
+			            {
+					          "type": "Internship",
+					          "title": "National Renewable Energy Lab",
+					          "year": 2018
+					        },
+			            {
+					          "type": "Award",
+					          "title": "Loevner Fellowship",
+					          "year": 2018
+					        }
+			          ]
+		      }
+	    ],
+
+
+
+      "Graduated PhD Students and Postdocs": [
+	      {
+		        "name": "Wenbo Tao",
+		        "type": "PhD",
+		        "university": "MIT",
+		        "advisor": "Mike Stonebraker",
+		        "image": "tao.jpg",
+		        "url": "https://www.csail.mit.edu/person/wenbo-tao",
+		        "startdate": 2017,
+		        "enddate": 2021,
+		        "employment": [
+			            {"After graduation":
+				               {
+						               "organization": "Facebook",
+						               "title": null
+						             }
+				             }
+			          ],
+		        "distinctions": null
+		      },
+	      {
+		        "name": "Ab Mosca",
+		        "type": "PhD",
+		        "image": "mosca.jpg",
+		        "url": "https://www.eecs.tufts.edu/~amosca01/",
+		        "startdate": 2016,
+		        "enddate": 2021,
+		        "employment": [
+			            {
+					          "After graduation":
+					          {
+						                  "organization": "Northeastern University",
+						                  "title": "Teaching Assistant Professor"
+						                }
+					        }
+			          ],
+		        "distinctions": [
+			            {
+					          "type": "Internship",
+					          "title": "In-Q-Tel",
+					          "year": 2020
+					        },
+			            {
+					          "type": "Internship",
+					          "title": "National Renewable Energy Lab",
+					          "year": 2018
+					        }
+
+			          ]
+		      },
+	      {
+		        "name": "Dylan Cashman",
+		        "type": "PhD",
+		        "image": "cashman.jpg",
+		        "url": "https://github.com/dylancashman",
+		        "startdate": 2016,
+		        "enddate": 2020,
+		        "employment": [
+			            {
+					          "After graduation":
+					          {
+						                  "organization": "Novartis",
+						                  "title": null
+						                }
+					        }
+			          ],
+		        "distinctions": [
+			            {
+					          "type": "Award",
+					          "title": "Best Paper Award (VIS Symposium on Visualization in Data Science)",
+					          "year": 2018
+					        },
+			            {
+					          "type": "Award",
+					          "title": "Best Paper Award (VIS Workshop on Visual Analytics for Deep Learning)",
+					          "year": 2017
+					        },
+			            {
+					          "type": "Internship",
+					          "title": "PARC",
+					          "year": 2016
+					        },
+			            {
+					          "type": "Award",
+					          "title": "Provost's Fellowship",
+					          "year": 2016
+					        },
+			            {
+					          "type": "Internship",
+					          "title": "MIT Lincoln Lab",
+					          "year": 2015
+					        }
+			          ]
+		      },
+	      {
+		        "name": "Marianne Procopio",
+		        "type": "PhD",
+		        "image": "procopio.jpg",
+		        "url": "https://www.eecs.tufts.edu/~procopio/",
+		        "startdate": 2015,
+		        "enddate": 2020,
+		        "employment": [
+			            {
+					          "After graduation":
+					          {
+						                  "organization": "MIT Lincoln Lab",
+						                  "title": null
+						                }
+					        }
+			          ],
+		        "distinctions": [
+			            {
+					          "type": "Award",
+					          "title": "MIT Lincoln Scholar",
+					          "year": 2016
+					        }
+			          ]
+		      },
+	      {
+		        "name": "Michael Behrisch",
+		        "type": "PostDoc",
+		        "image": "behrisch.jpg",
+		        "url": "https://mbehrisch.github.io",
+		        "startdate": 2019,
+		        "enddate": 2019,
+		        "employment": [
+			            {
+					          "After graduation":
+					          {
+						                  "organization": "Utrecht University (Netherlands)",
+						                  "title": "Assistant Professor"
+						                }
+					        }
+			          ],
+		        "distinctions": null
+		      },
+	      {
+		        "name": "Shah Rukh Humayoun",
+		        "type": "PostDoc",
+		        "image": "shah.png",
+		        "url": "https://faculty.sfsu.edu/~humayoun/",
+		        "startdate": 2017,
+		        "enddate": 2019,
+		        "employment": [
+			            {
+					          "After graduation":
+					          {
+						                  "organization": "San Francisco State University",
+						                  "title": "Assistant Professor"
+						                }
+					        }
+			          ],
+		        "distinctions": null
+		      },
+	      {
+		        "name": "Mike Curry",
+		        "type": "PhD",
+		        "university": "MIT",
+		        "advisor": "Daniel Hastings",
+		        "image": "curry.jpg",
+		        "url": "https://www.linkedin.com/in/currymike1/",
+		        "startdate": 2013,
+		        "enddate": 2017,
+		        "employment": [
+			            {
+					          "After graduation":
+					          {
+						                  "organization": "Draper",
+						                  "title": null
+						                }
+					        }
+			          ]
+		      },
+	      {
+		        "name": "Leilani Battle",
+		        "type": "PhD",
+		        "university": "MIT",
+		        "advisor": "Mike Stonebraker",
+		        "image": "leilani.jpg",
+		        "url": "https://homes.cs.washington.edu/~leibatt/",
+		        "startdate": 2012,
+		        "enddate": 2017,
+		        "employment": [
+			            {
+					          "After graduation":
+					          {
+						                  "organization": "University of Maryland",
+						                  "title": "Assistant Professor"
+						                },
+					          "Current":
+					          {
+						                  "organization": "University of Washington",
+						                  "title": "Assistant Professor"
+						                }
+					        }
+			          ],
+		        "distinctions": [
+			            {
+					          "type": "Award",
+					          "title": "MIT Technology Review Innovators Under 35",
+					          "year": 2020
+					        },
+			            {
+					          "type": "Award",
+					          "title": "NSF Graduate Fellowship",
+					          "year": 2012
+					        }
+			          ]
+		      },
+	      {
+		        "name": "Alvitta Ottley",
+		        "type": "PhD",
+		        "image": "ottley.jpg",
+		        "url": "https://www.eecs.tufts.edu/~alvittao/",
+		        "startdate": 2011,
+		        "enddate": 2016,
+		        "employment": [
+			            {
+					          "After graduation":
+					          {
+						                  "organization": "University of Washington in St. Louis",
+						                  "title": "Assistant Professor"
+						                }
+					        }
+			          ],
+		        "distinctions": [
+			            {
+					          "type": "Award",
+					          "title": "Heidelberg Laureate",
+					          "year": 2016
+					        },
+			            {
+					          "type": "Award",
+					          "title": "CHI Honorable Mention Best Paper Award",
+					          "year": 2015
+					        },
+			            {
+					          "type": "Award",
+					          "title": "Kirk and Janelle Loevner Fellowship (Tufts)",
+					          "year": 2014
+					        },
+			            {
+					          "type": "Internship",
+					          "title": "IBM Research (Almaden)",
+					          "year": 2014
+					        },
+			            {
+					          "type": "Internship",
+					          "title": "IBM Research (Cambridge)",
+					          "year": 2013
+					        }
+			          ]
+		      },
+	      {
+		        "name": "Beste Yuksel",
+		        "type": "PhD",
+		        "advisor": "Rob Jacob",
+		        "image": "yuksel.jpg",
+		        "url": "https://www.usfca.edu/faculty/beste-yuksel",
+		        "startdate": 2011,
+		        "enddate": 2016,
+		        "employment": [
+			            {
+					          "After graduation":
+					          {
+						                  "organization": "University of San Francisco",
+						                  "title": "Assistant Professor"
+						                }
+					        }
+			          ],
+		        "distinctions": [
+			            {
+					          "type": "Award",
+					          "title": "CHI Best Paper Award",
+					          "year": 2016
+					        }
+			          ]
+		      },
+	      {
+		        "name": "Eli Brown",
+		        "type": "PhD",
+		        "image": "brown.jpg",
+		        "url": "https://www.cdm.depaul.edu/Faculty-and-Staff/Pages/faculty-info.aspx?fid=1311",
+		        "startdate": 2010,
+		        "enddate": 2015,
+		        "employment": [
+			            {
+					          "After graduation":
+					          {
+						                  "organization": "DePaul University",
+						                  "title": "Assistant Professor"
+						                }
+					        }
+			          ],
+		        "distinctions": [
+			            {
+					          "type": "Internship",
+					          "title": "Microsoft Research (Redmond)",
+					          "year": 2014
+					        },
+			            {
+					          "type": "Internship",
+					          "title": "Pacific Northwest National Lab",
+					          "year": 2013
+					        }
+			          ]
+		      },
+	      {
+		        "name": "Lane Harrison",
+		        "type": "PostDoc",
+		        "image": "harrison.jpg",
+		        "url": "http://web.cs.wpi.edu/~ltharrison/",
+		        "startdate": 2013,
+		        "enddate": 2015,
+		        "employment": [
+			            {
+					          "After graduation":
+					          {
+						                  "organization": "WPI",
+						                  "title": "Assistant Professor"
+						                }
+					        }
+			          ],
+		        "distinctions": [
+			            {
+					          "type": "Award",
+					          "title": "InfoVis Best Poster Award",
+					          "year": 2012
+					        }
+			          ]
+		      },
+	      {
+		        "name": "Dan Afergan",
+		        "type": "PhD",
+		        "advisor": "Rob Jacob",
+		        "image": "afergan.jpg",
+		        "url": "https://www.eecs.tufts.edu/~afergan/",
+		        "startdate": 2011,
+		        "enddate": 2015,
+		        "employment": [
+			            {
+					          "After graduation":
+					          {
+						                  "organization": "Google",
+						                  "title": null
+						                }
+					        }
+			          ],
+		        "distinctions": null
+		      },
+	      {
+		        "name": "Evan Peck",
+		        "type": "PhD",
+		        "advisor": "Rob Jacob",
+		        "image": "peck.jpg",
+		        "url": "http://www.eg.bucknell.edu/~emp017/",
+		        "startdate": 2010,
+		        "enddate": 2014,
+		        "employment": [
+			            {
+					          "After graduation":
+					          {
+						                  "organization": "Bucknell University",
+						                  "title": "Assistant (now Associate) Professor"
+						                }
+					        }
+			          ]
+		      },
+	      {
+		        "name": "Jordan Crouser",
+		        "type": "PhD",
+		        "image": "crouser.jpg",
+		        "url": "https://www.smith.edu/academics/faculty/jordan-crouser",
+		        "startdate": 2010,
+		        "enddate": 2013,
+		        "employment": [
+			            {
+					          "After graduation":
+					          {
+						                  "organization": "MIT Lincoln Laboratory",
+						                  "title": null
+						                },
+					          "Current":
+					          {
+						                  "organization": "Smith College",
+						                  "title": "Associate Professor"
+						                }
+					        }
+			          ],
+		        "distinctions": [
+			            {
+					          "type": "Award",
+					          "title": "IEEE VGTC PhD Dissertation Award Honorable Mention",
+					          "year": 2014
+					        },
+			            {
+					          "type": "Internship",
+					          "title": "MIT Lincoln Lab",
+					          "year": 2012
+					        },
+			            {
+					          "type": "Award",
+					          "title": "Visualizing Research at Tufts Award: Illustrations",
+					          "year": 2011
+					        }
+			          ]
+		      }
+	    ],
+
+
+
+
+      "Graduated Master's Students": [
+	      {
+		        "name": "Rui Chen",
+		        "year": 2021
+		      },
+	      {
+		        "name": "Shannon Robinson",
+		        "year": 2020
+		      },
+	      {
+		        "name": "Alexandra Clifford",
+		        "year": 2020
+		      },
+	      {
+		        "name": "Brian Montambault",
+		        "year": 2020
+		      },
+	      {
+		        "name": "Kenny Alperin",
+		        "year": 2019
+		      },
+	      {
+		        "name": "Melissa Iori",
+		        "year": 2018,
+		        "distinctions": [
+			            {
+					          "type": "Award",
+					          "title": "Draper Fellow",
+					          "year": 2016
+					        }
+			          ]
+		      },
+	      {
+		        "name": "Maja Milosavlijevic",
+		        "year": 2017,
+		        "distinctions": [
+			            {
+					          "type": "Award",
+					          "title": "Google Lime Fellowship",
+					          "year": 2017
+					        },
+			            {
+					          "type": "Award",
+					          "title": "NSF Graduate Student Fellowship Honorable Mention",
+					          "year": 2016
+					        },
+			            {
+					          "type": "Award",
+					          "title": "NSA Mathematics and Computer Science Scholarship",
+					          "year": 2016
+					        }
+			          ]
+		      },
+	      {
+		        "name": "Erden Otkay",
+		        "year": 2017
+		      },
+	      {
+		        "name": "Filipe Barroso",
+		        "year": 2017
+		      },
+	      {
+		        "name": "Anzu Hakone",
+		        "year": 2017
+		      },
+	      {
+		        "name": "Jared Chandler",
+		        "year": 2016
+		      },
+	      {
+		        "name": "Dylan Cashman",
+		        "year": 2016
+		      },
+	      {
+		        "name": "Fumeng Yang",
+		        "year": 2016
+		      },
+	      {
+		        "name": "Stephen McDonald",
+		        "year": 2015
+		      },
+	      {
+		        "name": "Guvenc Usanmaz",
+		        "year": 2015
+		      },
+	      {
+		        "name": "Jason Jacob",
+		        "year": 2014
+		      },
+	      {
+		        "name": "Orkun Ozbek",
+		        "year": 2014
+		      },
+	      {
+		        "name": "Helen (Jieqiong) Zhao",
+		        "year": 2013
+		      },
+	      {
+		        "name": "Samuel (Shaomeng) Li",
+		        "year": 2012
+		      },
+	      {
+		        "name": "Takao Tanizawa",
+		        "year": 2011
+		      },
+	      {
+		        "name": "Jeremy Freeman",
+		        "year": 2011
+		      },
+	      {
+		        "name": "Michael Degatano",
+		        "year": 2011
+		      },
+	      {
+		        "name": "Daniel Kee",
+		        "year": 2011
+		      }
+	    ],
+
+
+
+
+
+      "Undergraduate Thesis": [
+	      {
+		        "name": "Shana Friedman",
+		        "year": 2015,
+		        "after": "Apple"
+		      },
+	      {
+		        "name": "Liz Salowitz",
+		        "year": 2013,
+		        "after": "Microsoft"
+		      },
+	      {
+		        "name": "Daniel Kass",
+		        "year": 2013,
+		        "after": "Layerframe"
+		      },
+	      {
+		        "name": "Connor Gramazio",
+		        "year": 2012,
+		        "after": "PhD Student at Brown",
+		        "distinctions": [
+			            {
+					          "type": "Award",
+					          "title": "NSF Graduate Student Fellowship",
+					          "year": 2011
+					        },
+			            {
+					          "type": "Award",
+					          "title": "Honorable Mention, CRA Undergraduate Research Award ",
+					          "year": 2011
+					        }
+			          ]
+		      }
+	    ],
+
+
+
+
+      "PhD Thesis Committee": [
+	      {
+		        "name": "Dereck J Toker",
+		        "year": 2019,
+		        "university": "University of British Columbia (UBC)",
+		        "advisor": "Cristina Conati",
+		        "after": null
+		      },
+	      {
+		        "name": "Sam Hincks",
+		        "year": 2019,
+		        "university": "Tufts",
+		        "advisor": "Rob Jacob",
+		        "after": null
+		      },
+	      {
+		        "name": "Zhe Wang",
+		        "year": 2019,
+		        "university": "University of Arizona",
+		        "advisor": "Carlos Scheidegger",
+		        "after": "ASML"
+		      },
+	      {
+		        "name": "Sara Amin",
+		        "year": 2019,
+		        "university": "Tufts",
+		        "advisor": "Soha Hassoun",
+		        "after": null
+		      },
+	      {
+		        "name": "Rafael Veras Guimaraes",
+		        "year": 2019,
+		        "university": "University of Ontario Institute of Technology",
+		        "advisor": "Christopher Collins",
+		        "after": "Huawei Technologies"
+		      },
+	      {
+		        "name": "Qing Chen",
+		        "year": 2018,
+		        "university": "Hong Kong University Science and Technology",
+		        "advisor": "Huamin Qu",
+		        "after": "Assistant Professor at Tongji University (China)"
+		      },
+	      {
+		        "name": "Michael Shah",
+		        "year": 2017,
+		        "university": "Tufts",
+		        "advisor": "Sam Guyer",
+		        "after": "Teaching Assistant Professor at Northeastern University"
+		      },
+	      {
+		        "name": "Robert D'Angelo",
+		        "year": 2017,
+		        "university": "Tufts (ECE)",
+		        "advisor": "Sameer Sonkusale",
+		        "after": "Draper"
+		      },
+	      {
+		        "name": "Jessica Zeitz Self",
+		        "year": 2016,
+		        "university": "Virginia Tech",
+		        "advisor": "Chris North",
+		        "after": "Assistant Professor at University of Mary Washington"
+		      },
+	      {
+		        "name": "Gordon Briggs",
+		        "year": 2015,
+		        "university": "Tufts",
+		        "advisor": "Matthias Scheutz",
+		        "after": "Naval Research Lab"
+		      },
+	      {
+		        "name": "Steven Gomez",
+		        "year": 2015,
+		        "university": "Brown University",
+		        "advisor": "David Laidlaw",
+		        "after": "MIT Lincoln Lab"
+		      },
+	      {
+		        "name": "Jingjing Liu",
+		        "year": 2014,
+		        "university": "Tufts",
+		        "advisor": "Carla Brodley",
+		        "after": "Google"
+		      },
+	      {
+		        "name": "Amelio Vazquez-Reina",
+		        "year": 2012,
+		        "university": "Tufts",
+		        "advisor": "Eric Miller",
+		        "after": "BBN / Raytheon"
+		      },
+	      {
+		        "name": "James Won",
+		        "year": 2012,
+		        "university": "Tufts (Human Factors)",
+		        "advisor": "Dan Hannon",
+		        "after": "MIT Lincoln Lab"
+		      },
+	      {
+		        "name": "Erin Solovey",
+		        "year": 2011,
+		        "university": "Tufts",
+		        "advisor": "Rob Jacob",
+		        "after": "Assitant Professor at Drexel"
+		      },
+	      {
+		        "name": "Thomas Butkiewicz",
+		        "year": 2011,
+		        "university": "UNC Charlotte",
+		        "advisor": "Bill Ribarsky",
+		        "after": "Research Assitant Professor at University of New Hampshire"
+		      }
+	    ]
+    }

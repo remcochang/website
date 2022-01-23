@@ -1,0 +1,192 @@
+/*page layout, 4 columns*/
+#page {
+	/*width: 1050;*/
+	width: 1500;
+}
+
+.column {
+    float: left;
+}
+
+.infop{
+    padding: 20 0 0 20;
+    width: 10%;
+}
+
+.alum{
+    padding: 0 20 0 0;
+    width: 25%;
+}
+
+.papers{
+    padding: 0 20 0 0;
+    width: 25%;
+}
+
+.others{
+    width: 20%;
+}
+
+
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/*column 1 layout -- info panel*/
+
+#info {
+	float: left;
+	text-align: right;
+	padding: 0 0 0 0;
+	/*padding: 0 30px 0 0;*/
+}
+
+
+/*column 2 layout -- recent professors*/
+
+.faculty {
+    font-size: 12px; 
+    font-weight: bold;
+    overflow: auto;
+    padding: 0 0 5 0;
+}
+
+.face {
+    float: left;
+    border: 1px;
+    border-style: solid;
+    border-color: #AAAAAA;
+    margin-right: 10px;
+    float: left;
+    width: 100px;
+    height: 75px;
+}
+
+
+/*column 3 layout -- recent publications*/
+
+.paper {
+    font-size: 12px; 
+    font-weight: bold;
+    overflow: auto;
+    padding: 0 0 5 0;
+}
+
+.teaser {
+	border: 1px;
+        border-style: solid;
+        border-color: #AAAAAA;
+	margin-right: 10px;
+	float: left;
+	width: 100px;
+	height: 75px;
+}
+
+
+h1 {
+	font-family: Tahoma; 
+	font-size: 18px; 
+	font-weight: normal; 
+	color: #333333;	
+	margin: 0;
+}
+
+h2 {
+	font-family: Tahoma; 
+	font-size: 14px; 
+	font-weight: bold; 
+	color: #333333;	
+	margin-bottom: 8px;
+}
+
+
+p {
+	margin: 0;
+	font-family: Tahoma; 
+	font-size: 12px; 
+	font-weight: normal;
+}
+
+p.title{
+	font-size: 12px; 
+	font-weight: bold;
+}
+
+p.research, p.pub {
+	font-size: 11px; 
+}
+
+p.teaching {
+	font-size: 12px; 
+}
+
+p.contact {
+	font-size: 13px; 
+}
+
+p.grants, p.talks {
+	font-size: 11px; 
+	padding-bottom: 8px;
+}
+
+
+tr {
+	width: 870px;
+}
+
+td {
+	width: 275px;
+	vertical-align: top;
+	padding: 0px 15px 0px 0px;
+}
+
+a:link, a:visited {
+  color: navy;
+  text-decoration: none;
+}
+
+a:hover {
+  color: navy;
+  text-decoration: underline;
+}
+
+img.research 
+{
+	border: 1px;
+        border-style: solid;
+        border-color: #AAAAAA;
+	margin-right: 10px;
+	float: left;
+	width: 100px;
+	height: 75px;
+}
+
+img.research2 
+{
+	border: 1px;
+        border-style: solid;
+        border-color: #AAAAAA;
+	margin-right: 10px;
+	float: left;
+	width: 100px;
+	height: 100px;
+}
+
+img.research3
+{
+	border: 1px;
+        border-style: solid;
+        border-color: #AAAAAA;
+	margin-right: 10px;
+	float: left;
+	width: 100px;
+	height: 90px;
+}
+
+#content {
+	margin: 0 0 0 0;
+}
+
+

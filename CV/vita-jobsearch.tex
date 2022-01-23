@@ -1,0 +1,150 @@
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+\documentclass[10pt, letterpaper]{moderncv}
+
+% moderncv styles
+%\moderncvstyle{casual}       % optional argument are 'nocolor' (black & white cv) and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvstyle{classic}      % idem
+\moderncvstyle[nocolor,roman]{casual}      % idem
+
+% character encoding
+\usepackage[utf8]{inputenc}   % replace by the encoding you are using
+\usepackage{url}
+\urlstyle{same}
+\usepackage{multibib}
+\newcites{jour}{Journal Papers}
+\newcites{misc}{Miscellaneous Papers}
+\newcites{conf}{Conference Papers}
+
+
+% personal data (the given example is exhaustive; just give what you want)
+\firstname{Remco} \familyname{Chang}
+\title{Research Scientist / \newline PhD Candidate}
+\address{Department of Computer Science, Charlotte Visualization Center.  University of North Carolina at Charlotte.  9201 University City Blvd.   Charlotte, NC 28223\\}  % for classic style
+\phone{+1 (704) 687-7741} \email{rchang@uncc.edu} \extrainfo{\url{www.viscenter.uncc.edu/~rchang}}
+%\photo[64pt]{jdoe_picture} % also optional, and the optional argument is the height the picture must be resized to
+%\quote{Any intelligent fool can make things bigger, more complex, and more violent. It takes a touch of genius -- and a lot of courage -- to move in the opposite direction.}% also optional
+
+%\renewcommand{\listsymbol}{{\fontencoding{U}\fontfamily{ding}\selectfont\tiny\symbol{'102}}} % define another symbol to be used in front of the list items
+
+% the ConTeXt symbol
+\def\ConTeXt{%
+  C%
+  \kern-.0333emo%
+  \kern-.0333emn%
+  \kern-.0667em\TeX%
+  \kern-.0333emt}
+
+% slanted small caps (only with roman family; the sans serif font doesn't exists :-()
+%\usepackage{slantsc}
+%\DeclareFontFamily{T1}{myfont}{}
+%\DeclareFontShape{T1}{myfont}{m}{scsl}{ <-> cork-lmssqbo8}{}
+%\usefont{T1}{myfont}{m}{scsl}Testing the font
+
+% command and color used in this document, independently from moderncv
+\definecolor{see}{rgb}{0.5,0.5,0.5}% for web links
+\newcommand{\up}[1]{\ensuremath{^\textrm{\scriptsize#1}}}% for text subscripts
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+%\makequote
+
+\section{Academic Degrees}
+\cventry{December 2009}{PhD in Computer Science}{University of North Carolina Charlotte}{Charlotte, NC}{}{Thesis: "Thinking Interactively with Visualization"} \cvitem{}{Advisor: William Ribarsky}
+
+\cventry{May 2000}{M.Sc. in Computer Science}{Brown University}{Providence, RI}{}{Thesis: "Simulation Techniques for Deformable Animated Characters"} \cvitem{}{Advisor: Nancy Pollard}
+
+\cventry{December 1997}{B.A. in Engineering}{Johns Hopkins University}{Baltimore, MD}{}{Major: Computer Science} \cventry{December 1997}{B.A. in Arts and Science}{Johns Hopkins University}{Baltimore, MD}{} {Major: Economics}
+
+\section{Professional Appointments}
+\cventry{1/05 -- current}{Research Scientist}{University of North Carolina at Charlotte}{Charlotte, NC}{}{} \cventry{10/03 -- 1/05}{Senior Developer}{Vethorizons LLC}{Charlotte, NC}{}{} \cventry{10/02 -- 10/03}{Senior Software Engineer}{Boeing Corp/Preston Aviation LCC}{Fairfax, VA}{}{} \cventry{06/00 -- 04/01}{Technology Lead}{BountyQuest Corp}{Boston, MA}{}{}
+
+\section{Publications}
+\closesection{}%
+\vspace*{-1.65em}%
+\nocite{*} \nocitejour{*} {\em Journal Papers / Book Chapters} \vspace*{1em}
+\bibliographystylejour{unsrt}
+\bibliographyjour{jour}
+%\setcounter{enumiv}{0}
+\vspace*{1em} \nociteconf{*}
+{\em Conference / Workshop Papers}\\
+%\bibliographystyle{unsrt}
+%\bibliography{conf}
+\bibliographystyleconf{unsrt}
+\bibliographyconf{conf}
+\vspace*{1em} \nocitemisc{*}
+{\em Miscellaneous}\\
+\bibliographystylemisc{unsrt}
+\bibliographymisc{misc}
+\vspace*{1em}
+
+\section{Grants}
+\cvitem{PI}{\textbf{NSF/DoD SES: NSCC:} Collaborative Research: Terror, Conflict Processes, Organizations, \& Ideologies: Completing the Picture (Funded by DoD as part of the Minerva Initiative).  \$100,000.  2009-2011 (2 years).}
+
+\cvitem{co-PI}{\textbf{NSF SciSIP:} A Visual Analytics Approach to Science and Innovation Policy.  PI: William Ribarsky, Co-PIs: Jim Thomas, Remco Chang, Jing Yang. \$746,567. 2009-2012 (3 years).}
+
+\cvitem{}{\textbf{DHS International Program:} Deriving and Applying Cognitive Principles for Human/Computer Approaches to Complex Analytical Problems.  PI: William Ribarsky, Co-PIs: Brian Fisher, Remco Chang, John Dill. \$200,000. 2009-2010 (1 year).}
+
+
+\section{Professional Activities}
+\cvlistitemstart{Journal Reviewer}{IEEE Computer Graphics and Applications (CG\&A)} \cvlistitem{IEEE Transactions on Computer Graphics and Visualization (TVCG)} \cvlistitem{IEEE Conf. on Information Visualization} \cvlistitem{IEEE Conf. on Visualization} \cvlistitem{Computer Graphics Forum (Wiley)} \cvlistitem{Environment and Urban Systems (Elsevier)} \cvlistitem{International Journal of Geographical Information Science (Taylor \& Francis)}
+
+\cvlistitemstart{Conf Reviewer}{IEEE Symposium on Visual Analytics} \cvlistitem{Computer Graphics International Conference} \cvlistitem{IEEE-VGTC Symposium on Visualization} \cvlistitem{CHI Workshop on Beyond Time and Errors (BELIV)} \cvlistitem{ACM SIGGRAPH Asia} \cvlistitem{ACM SIGCHI}
+
+\cvlistitemstart{Memberships}{IEEE Computer Society} \cvlistitem{ACM (Association for Computing Machinery)} \cvlistitem{Sigma Xi, The Scientific Research Society} \cvlistitem{Phi Kappa Phi Honor Society}
+
+\cvlistitemstart{Committee}
+{IEEE Conference on Visual Analytics Science and Technology (VAST 2010)}
+\cvlistitem{ACM SIGCHI Workshop on Beyond Time and Errors (BELIV 2010)}
+\cvlistitem{AAAI Spring-09 Symposium on Technosocial Predictive Analytics (2009)}
+
+\cvlistitemstart{Panelist} {3rd Annual DHS University Summit. Panel: Research to Reality (2009)} \cvlistitem{3rd Annual DHS University Summit. Panel: Visual Analytics and Discrete Science Integration into the DHS Center of Excellence Program (2009)} \cvlistitem{National Visual Analytics Consortium. Panel: High-Priority Research Directions for Visual Analytics (2009)}
+
+\cvlistitemstart{Service}{UNC Charlotte CCI Dean Search Committee (2008)} \cvlistitem {UNC Charlotte CCI Research Strategic Planning Committee (2009)}
+ \closesection{}
+
+ \section{Invited Talks}
+ \cvitem{Dec 13, 2006}{Google Inc. \em{Simplification of Urban Models based on Urban Legibility}}
+ \cvitem{Jul 6, 2007}{Naval Research Lab. \em{Urban Visualization}}
+ \cvitem{Oct 4, 2007}{Charlotte Viscenter. \em{Urban Visualization}}
+ \cvitem{Oct 17, 2007}{Charlotte Metropolitan GIS Users Group. \em{GIS and Urban Visualization}}
+ \cvitem{Nov 19, 2007}{START Center at University of Maryland. \em{Integrated Visual Analysis of the Global Terrorism Database}}
+ \cvitem{Nov 29, 2007}{Charlotte Viscenter. \em{Integrated Visual Analysis of the Global Terrorism Database}}
+ \cvitem{Jan 25, 2008}{DoD/DHS Social Science Modeling and Information Visualization Symposium. \em{Social Science and Information Visualization on Terrorism and Multimedia}}
+ \cvitem{May 14, 2008}{Charlotte Metropolitan GIS User Group. \em{Multi-Focused Geospatial Analysis Using Probes}}
+ \cvitem{Aug 27, 2008}{DoD/DHS Symposium for Overcoming the Information Challenge in Federated Analysis: From Concept to Practice. \em{Roadmap of Visualization}}
+ \cvitem{Mar 19, 2009}{DHS University Summit.  Panel: Research to Reality}
+ \cvitem{Mar 19, 2009}{DHS University Summit.  Panel: Visual Analytics and Discrete Science Integration into the DHS Center of Excellence Program}
+ \cvitem{Apr 27, 2009}{University of Kentucky.  \em{Thinking Interactively with Visualization}}
+ \cvitem{May 29, 2009}{University of Victoria.  \em{Thinking Interactively with Visualization}}
+ \cvitem{Jul 28, 2009}{Pacific Northwest National Lab.  \em{Thinking Interactively with Visualization}}
+ \cvitem{Jul 30, 2009}{Microsoft Research.  \em{Thinking Interactively with Visualization}}
+ \cvitem{Aug 19, 2009}{National Visual Analytic Consortium.  \em{What Are Your Interactions Doing For Your Visualization?}}
+ \cvitem{Sep 30, 2009}{University of Kentucky (Grand Rounds at the Department of Surgery).  \em{Preventing Sepsis: Artificial Intelligence, Knowledge Discovery, and Visualization}}
+ \cvitem{Jan 21, 2010}{Charlotte Viscenter. \em{UrbanVis Research Group: Urban Analytics}}
+ \closesection{}
+
+ \section{Teaching}
+\cventry{Summer 1999}{Instructor}{Center for Talented Youth (CTY)} {Stanford University}{} {Course: Intro to Computer Science} \cventry{Summer 1996}{Head Teaching Assistant}{Dept of Computer Science} {Johns Hopkins University}{} {Course: Programming in C} \cventry{Fall 1995}{Teaching Assistant}{Dept of Computer Science} {Johns Hopkins University}{} {Course: Programming in Pascal} \cventry{Summer 1995}{Head Teaching Assistant}{Dept of Computer Science} {Johns Hopkins University}{} {Course: Programming in Pascal} \cventry{Spring 1995}{Teaching Assistant}{Dept of Computer Science} {Johns Hopkins University}{} {Course: Intro to Computer Literacy} \cventry{Fall 1994}{Head Teaching Assistant}{Dept of Computer Science} {Johns Hopkins University}{} {Course: Programming in Pascal}
+ \closesection{}
+
+ \section{References}
+\cventry{Primary}{William Ribarsky}{Bank of America Endowed Chair, Director of the Charlotte Visualization Center}{Computer Science Department} {UNC Charlotte}{ribarsky@uncc.edu} \cventry{}{Nancy Pollard}{Associate Professor}{Robotics Institute} {Carnegie Mellon University} {nsp@cs.cmu.edu} \cventry{}{Jim Thomas}{Laboratory Fellow, Founder of Visual Analytics}{National Visual Analytics Center} {Pacific Northwest National Laboratory}{jim.thomas@pnl.gov}
+
+\cventry{Supporting}{Eric Sauda}{Professor}{Department of Architecture} {UNC Charlotte} {EricSauda@uncc.edu} \cventry{}{Jean-Claude Thill}{Knight Distinguished Professor}{Department of Geography and Earth Sciences} {UNC Charlotte} {Jean-Claude.Thill@uncc.edu} \cventry{}{Yi Deng}{Dean and Professor}{School of Computing and Informatics} {UNC Charlotte}{Yi.Deng@uncc.edu} \closesection{}
+
+ \section{Student Thesis Committee}
+\cvitem{Master's Thesis} {\textbf{Ginette Wessel}.  Department of Architecture.\\\emph{Graduated in May 2009.}} \cvitem{PhD Thesis}{\textbf{Thomas Butkiewicz}.  Department of Computer Science.\\\emph{Expected Date of Graduation 2010}} \cvitem{}{\textbf{Xiaoyu Wang}.  Department of Computer Science.\\\emph{Expected Date of Graduation 2012}} \cvitem{}{\textbf{Wenwen Dou}.  Department of Computer Science.\\\emph{Expected Date of Graduation 2012}}
+ \closesection{}
+
+ \section{Other}
+ \cvitem{Languages}{English, Chinese (bilingual)}
+ \cvitem{Citizenship}{USA, Taiwan (dual citizenship)}
+ \closesection{}
+
+\end{document}

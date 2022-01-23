@@ -1,0 +1,85 @@
+﻿<html> 
+<head> 
+    <title>Remco Chang</title> 
+    <link type="text/css" rel="stylesheet" href="remco-students2.css"> 
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-11359407-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head> 
+ 
+<body> 
+
+<div class="row" id="page">
+ 
+<div class="column infop"> 
+
+  <br>
+  <div id="info">
+
+    <h1>Remco Chang</h1> 
+    <br>
+    <p class="contact">Associate Professor<br>
+      <a href="http://www.tufts.edu">Tufts University</a><br> 
+      <a href="http://www.cs.tufts.edu">Computer Science</a><br> 
+    </p>
+    <br>
+    <p class="contact"> 
+      Joyce Cummings Hall<br> 
+      177 College Avenue<br> 
+      Medford, MA 02155<br> 
+      (Office) 617-627-3681<br>
+      <!--(Lab) 617-627-6514<br>-->
+      remco_at_cs.tufts.edu
+    </p> 
+    <br>
+    <p class="contact">
+      <a href="vita.pdf">vita</a><br>
+      <a href="publication.html">publications</a><br>
+      <a href="students.html">students</a><br>
+      <a href="talks.html">talks</a><br>
+      <a href="grants.html">grants</a><br>
+      <a href="calendar.html">calendar</a><br>
+    </p>
+
+  </div>
+</div>
+
+<!------------column break-------------------------->
+
+<div class="column students">
+  <div id="advisee"></div>
+</div>
+
+
+
+
+
+</div>
+</body>
+
+<script src="js/d3.v3.min.js" charset="utf-8"></script>
+<script>
+         d3.json("data/students.json", function(data) {
+	     console.log(Object.values(data));
+             var block = d3.select("#advisee")
+			   .selectAll("div")
+			   .data(Object.values(data))
+			   .enter()
+			   .append("div")
+			   .html(function(d) {return d;});
+	     
+         });
+</script>
+
+</html>

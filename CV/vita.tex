@@ -1,0 +1,792 @@
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+\documentclass[10pt, letterpaper]{moderncv}
+
+% moderncv styles
+%\moderncvstyle{casual}       % optional argument are 'nocolor' (black & white cv) and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvstyle{classic}      % idem
+\moderncvstyle[nocolor,roman]{casual}      % idem
+
+
+% character encoding
+\usepackage[utf8]{inputenc}   % replace by the encoding you are using
+\usepackage{url}
+\urlstyle{same}
+\usepackage{multibib}
+\newcites{book}{Book Chapters}
+\newcites{jour}{Journal Papers}
+\newcites{misc}{Miscellaneous Papers}
+\newcites{conf}{Conference Papers}
+\newcites{workshop}{Workshop Papers}
+\newcites{intro}{Introductions}
+
+
+% personal data (the given example is exhaustive; just give what you want)
+\firstname{Remco} \familyname{Chang}
+\title{Associate Professor}
+\address{Remco Chang. Associate Professor.\\Department of Computer Science, Tufts University.  161 College Avenue.  Medford, MA 02155\\}  % for classic style
+\phone{617-627-3681} \email{remco@cs.tufts.edu} \extrainfo{\url{www.cs.tufts.edu/~remco}}
+%\photo[64pt]{jdoe_picture} % also optional, and the optional argument is the height the picture must be resized to
+%\quote{Any intelligent fool can make things bigger, more complex, and more violent. It takes a touch of genius -- and a lot of courage -- to move in the opposite direction.}% also optional
+
+%\renewcommand{\listsymbol}{{\fontencoding{U}\fontfamily{ding}\selectfont\tiny\symbol{'102}}} % define another symbol to be used in front of the list items
+
+% the ConTeXt symbol
+\def\ConTeXt{%
+  C%
+  \kern-.0333emo%
+  \kern-.0333emn%
+  \kern-.0667em\TeX%
+  \kern-.0333emt}
+
+% slanted small caps (only with roman family; the sans serif font doesn't exists :-()
+%\usepackage{slantsc}
+%\DeclareFontFamily{T1}{myfont}{}
+%\DeclareFontShape{T1}{myfont}{m}{scsl}{ <-> cork-lmssqbo8}{}
+%\usefont{T1}{myfont}{m}{scsl}Testing the font
+
+% command and color used in this document, independently from moderncv
+\definecolor{see}{rgb}{0.5,0.5,0.5}% for web links
+\newcommand{\up}[1]{\ensuremath{^\textrm{\scriptsize#1}}}% for text subscripts
+
+%last one is hidden, which is used for rendering the website
+\newcommand*{\cventryWeb}[7]{%
+  \cvitem{#1}{%
+    {\bfseries#2}%
+    \ifthenelse{\equal{#3}{}}{}{, {\slshape#3}}%
+    \ifthenelse{\equal{#4}{}}{}{, #4}%
+    \ifthenelse{\equal{#5}{}}{}{, #5}%
+    .%
+    \ifthenelse{\equal{#7}{}}{}{\\\begin{minipage}[t]{\textwidth}\small#7\end{minipage}}
+    \ifthenelse{\equal{#6}{}}{}{\\\begin{minipage}[t]{\textwidth}\small#6\end{minipage}}}}
+
+%last item is hidden
+\newcommand*{\cvtalkWeb}[7]{%
+  \if@firstcvline
+  \else
+    \\[-0.75em]\fi
+  \cvline{#1}{#2 (#3). #5\\\emph{#4}}}
+%  \ifthenelse{\equal{#5}{}}{}{\\\begin{minipage}[t]{\textwidth}\small#5\end{minipage}}}}
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+%\makequote
+
+\section{Professional Appointments}
+\cventry{09/16 -- current}{Associate Professor}{Tufts University}{Medford, MA}{}{Department of Computer Science \newline Adjunct Appointment in the Cognitive and Brain Science Program (2017--)}
+\cventry{02/20 -- current}{Advisor \& Co-Founder}{Kyrix Inc}{Cambridge, MA}{}{Co-Founders: Mike Stonebraker, Wenbo Tao, Adam Sah, Ken Smith, Kathleen Huber, Ricardo Mayerhofer}
+\cventry{12/17 -- 1/18}{Visiting Faculty}{Ghent University}{Ghent, Belgium}{}{hosts: Tijl De Bie, Jefrey Lijffijt}
+\cventry{09/10 -- 05/16}{Assistant Professor}{Tufts University}{Medford, MA}{}{Department of Computer Science \newline Director of the Visual Analytics Lab at Tufts (VALT)}
+\cventry{01/05 -- 06/10}{Research Scientist}{University of North Carolina Charlotte}{Charlotte, NC}{}{}
+%\cventry{10/03 -- 01/05}{Senior Developer}{Vethorizons LLC}{Charlotte, NC}{}{}
+\cventry{10/02 -- 10/03}{Senior Software Engineer}{Boeing Corp/Preston Aviation}{Fairfax, VA}{}{}
+\cventry{06/00 -- 04/01}{Technology Lead}{BountyQuest Corp}{Boston, MA}{}{}
+\closesection{}
+
+\section{Academic Degrees}
+\cventry{December 2009}{PhD in Computer Science}{University of North Carolina Charlotte}{Charlotte, NC}{}{Thesis: ``Thinking Interactively with Visualization''} 
+\cvitem{}{Advisor: William Ribarsky}
+\vspace{-0.3in}
+\cventry{May 2000}{MSc in Computer Science}{Brown University}{Providence, RI}{}{Thesis: ``Simulation Techniques for Deformable Animated Characters''} 
+\cvitem{}{Advisor: Nancy Pollard}
+\vspace{-0.3in}
+\cventry{December 1997}{BA in Computer Science}{Johns Hopkins University}{Baltimore, MD}{}{}
+\cventry{December 1997}{BA in Economics}{Johns Hopkins University}{Baltimore, MD}{} {}
+
+\section{Consulting}
+\cvitem{07/15 -- 06/16}{\textit{National Cancer Institute (via Maine Medical Center)}, Rockville, MD}
+\cvitem{05/10 -- 05/11}{\textit{DARPA (via Lustick Consulting)}, Philadelphia, PA}
+\cvitem{03/10 -- 05/11}{\textit{Bank of America}, Charlotte, NC}
+\closesection{}
+
+\section{Awards and Honors}
+\cvlistitemstart{2021} {Associate Editor: IEEE Transactions on Visualization and Computer Graphics}
+\cvlistitemstart{2020} {Sigma Xi Honor Society Full Member}
+\cvlistitemstart{2019--}
+{Tufts University Faculty Senate (Committee on Research and Scholarship)}
+\cvlistitemstart{2019}
+{Conference Papers Chair: IEEE Visual Analytics Science and Technology (VAST)}
+\cvlistitemstart{2018}
+{Conference Papers Chair: IEEE Visual Analytics Science and Technology (VAST)}
+\cvlistitem{Best Paper Award: Symposium on Visualization in Data Science}
+\cvlistitemstart{2017}
+{Best Paper Award: Workshop on Visual Analytics for Deep Learning}
+\cvlistitemstart{2016}
+{Best Paper Award: ACM SIGCHI Conference}
+\cvlistitemstart{2015}
+%{Invitation to Dagstuhl Workshop on Evaluation in the Crowd (Nov)}
+%\cvlistitem
+{Tufts CELT Fellow (Center for Enhancement of Learning and Teaching)}
+\cvlistitem{NSF CAREER Award}
+\cvlistitem{Honorable Mention Award: ACM SIGCHI Conference}
+\cvlistitem{Best Paper Award: SPIE Visual Data Analysis (VDA)}
+\cvlistitemstart{2014}
+{IEEE VGTC PhD Dissertation Award Honorable Mention: Jordan Crouser}
+%\cvlistitem{Invitation to Dagstuhl Workshop on Scientific Visualization (Jun)}
+\cvlistitem{Associate Editor: ACM Transactions on Interactive Intelligent Systems (2014-present)}
+\cvlistitem{Honorable Mention Award: ACM SIGCHI Conference}
+%\cvlistitem{Invitation to Dagstuhl Perspective Workshop on Connecting Performance Analysis and Visualization to Advance Extreme Scale Computing (Jan)}
+\cvlistitemstart{2013}
+{Faculty Mentoring Award: Tufts University School of Engineering}
+\cvlistitem{Special Mention for Outstanding Faculty Contribution to Graduate Studies: Tufts University}
+\cvlistitemstart{2012}
+{Best Poster Award: IEEE VAST Conference}
+%\cvlistitem{Microsoft Research Faculty Summit (Jul)}
+\cvlistitemstart{2011}
+{Honorable Mention Award: IEEE VAST Conference}
+\cvlistitem{Best Poster Award: IEEE InfoVis Conference}
+\cvlistitem{Best Panel Award: IEEE VAST Conference}
+\cvlistitem{Visualizing Research @ Tufts Award: First Place in Illustrations}
+\cvlistitemstart{2008}
+{Best Poster Award: IEEE VAST Conference}
+\cvlistitemstart{2007}
+{Runner-Up Best Paper Award: IEEE VAST Conference}
+\closesection{}
+
+
+\section{Publications}
+\closesection{}%
+\vspace*{-1.65em}%
+
+\nocitejour{*} {\em Journal Publications} \vspace*{1em}
+\bibliographystylejour{unsrt}
+\bibliographyjour{jour}
+
+%\setcounter{enumiv}{0}
+\vspace*{0.75em} \nociteconf{*} {\em Select Refereed Conference / Symposium Publications}\\
+\bibliographystyleconf{unsrt}
+\bibliographyconf{conf}
+
+\vspace*{0.75em} \nociteworkshop{*} {\em Other Refereed Conference / Symposium / Workshop Publications}\\
+\bibliographystyleworkshop{unsrt}
+\bibliographyworkshop{workshop}
+
+\vspace*{0.75em} \nocitebook{*} {\em Book Chapters} \vspace*{1em}
+\bibliographystylebook{unsrt}
+\bibliographybook{book}
+
+\vspace*{0.75em} \nociteintro{*} {\em Introductions}\\
+\bibliographystyleintro{unsrt}
+\bibliographyintro{intro}
+
+\vspace*{0.75em} \nocitemisc{*} {\em Posters / Tech Reports / Abstracts / Theses}\\
+\bibliographystylemisc{unsrt}
+\bibliographymisc{misc}
+
+\closesection{}
+
+\section{Grants}
+\input{grants.tex}
+\closesection{}
+
+
+\section{Editorial Activities}
+\cventry{Associate Editor}{IEEE Transactions on Visualization and Computer Graphics (TVCG)}{2021-present}{}{}{}
+\cventry{}{ACM Transactions on Interactive Intelligent Systems (TiiS)}{2014-present}{}{}{}
+\cventry{}{Journal of Human Computation}{2014-2018}{}{}{}
+\cventry{Book Chapter}{Human Computation Handbook}{Section editor for ``Algorithms''}{Springer (ed: Pietro Michelucci)}{2012-13}{co-editor: Caroline Ziemkiewicz}
+\cventry{Guest Editor}
+{ACM Transactions on Interactive Intelligent Systems (TiiS)}{Special Issue on Interactive Visual Analytics for 
+Making Explainable and Accountable Decisions}{2019-20}{}{co-editors: Cagatay Turkay, Tatiana von Landesberger, Shixia Liu, Daniel Archambault}
+\cventry{}{Behaviour \& Information Technology (Taylor \& Francis)}{Special Issue on Human Centric Visual Analytics}{2018-19}{}{co-editors: Weidong Huang, Yuhua Luo, Brian Fisher}
+\cventry{}{IEEE Computer Graphics and Applications (CG\&A)}{Special Issue on Visualization Connections}{2017-18}{}{co-editors: Peter Lindstrom, Huamin Qu}
+\cventry{}{ACM Transactions on Interactive Intelligent Systems (TiiS)}{Special Issue on Computational Visual Analytics}{2012-13}{}{co-editors: David Ebert, Daniel Keim}
+\closesection{}
+
+
+\section{Conference Activities}
+\cvlistitemstarttwo{Organization}
+{PacificVis 2021 Best Paper Committee}{co-chairs: Jinwook Seo and Thomas Ertl}
+\cvlistitemtwo{VAST 2020 Test-of-Time Award Committee}{co-chairs: Giuseppe Santucci and Brian Fisher}
+\cvlistitemtwo{VAST 2020 Best Paper Committee}{co-chairs: Min Chen, Liz Marai}
+\cvlistitemtwo{Paper Chair: IEEE VAST 2019}{co-chairs: Daniel Keim, Ross Maciejewski}
+\cvlistitemtwo{VAST 2019 Test-of-Time Award Committee}{co-chairs: Giuseppe Santucci and Brian Fisher}
+\cvlistitemtwo{Paper Chair: IEEE VAST 2018}{co-chairs: Tobias Schreck, Huamin Qu}
+\cvlistitemtwo{Steering Committee: Data Systems for Interactive Analysis (DSIA), 2018}{co-chairs: Carlos Scheidegger, Jeff Heer, Danyel Fisher}
+\cvlistitemtwo{Workshop Organizer: Machine Learning from User Interaction for Visualization and Analytics, 2018-19}{co-organizers: John Wenskovitch, Michelle Dowling, Chris North, Remco Chang, Alex Endert, David Rogers}
+\cvlistitemtwo{Workshop Chair: KDD Interactive Data Exploration and Analysis (IDEA) Workshop, 2018}{co-organizers: Jefrey Lijffijt, Minsuk Kahng, Polo Chau, Dafna Shahaf, Christos Faloutsos}
+\cvlistitemtwo{VIS Summer Camp (Workshop for mentoring untenured professors in VIS), 2016-18}{co-organizer: Kristi Potter}
+\cvlistitemtwo{Dagstuhl Seminar on Connecting Visualization and Data Management Research, 2017}{co-organizers: Carlos Scheidegger, Jean-Daniel Fekete, Juliana Freire}
+\cvlistitem{Session Chair: IEEE VAST 2017.  Session: High-Dimensional Data}
+\cvlistitemtwo{Workshop Chair: IEEE VAST Conference 2017}{co-organizers: Huamin Qu, Peter Lindstrom}
+\cvlistitemtwo{Workshop Organizer: Data Systems for Interactive Analysis (DSIA), 2015, 2017}{co-organizers: Carlos Scheidegger, Jeff Heer, Danyel Fisher}
+\cvlistitemtwo{Panel Chair: IEEE VAST Conference 2016}{co-organizers: Hieke Leitte, Michael Sedlmair}
+\cvlistitem{Workshop Organizer: BostonVIS 2014-16}
+\cvlistitem{Session Chair: VAST 2015.  Session: Complementing Visual and Algorithmic Analysis}
+\cvlistitemtwo{Committee: VAST Best Poster Committee, 2014}{co-chairs: Ross Maciejewski, Heidrun Schumann}
+\cvlistitemtwo{Workshop Organizer: Semantic Interaction, Pacific Northwest National Lab 2014}{co-chairs: Alex Endert, Chris North, Michelle Zhou}
+\cvlistitemtwo{Workshop Organizer: Exploratory Data Analysis, SIAM Conference on Data Mining 2014}{co-organizers: Haesun Park, Jaegul Choo, Zhicheng (Leo) Liu}
+\cvlistitemtwo{Doctoral Colloquium Chair: IEEE VAST Conference 2013}{co-chairs: Niklas Elmqvist (InfoVis), Jian Chen (SciVis)}
+\cvlistitem{Session Chair: IEEE VIS 2013.  Session: TVCG-Information Visualization}
+\cvlistitemtwo{Workshop Organizer: Toward Social Computing as a Discipline, SocialCom 2013}{co-organizers: Pietro Michelucci, Haym Hirsh}
+\cvlistitem{Session Leader in Visual Analytics: Tufts World Health Day Conference 2013}
+\cvlistitemtwo{Poster Chair: IEEE VAST Conference 2012}{co-chair: Ross Maciejewski}
+\cvlistitem{Session Chair: ACM CHI 2012.  Session: Search Interfaces}
+\cvlistitemtwo{Poster Chair: IEEE VAST Conference 2011}{co-chair: Jo Wood}
+\cvlistitemtwo{Panel Organizer: IEEE InfoVis Panel: Process + Interaction + Insight: The Need for Analytic Provenance, 2011. \textbf{Best Panel Award}}{co-organizier: TJ Jankun-Kelly}
+\cvlistitemtwo{Workshop Organizer: ACM CHI Workshop on Analytic Provenance: Process + Interaction + Insight, 2011}{co-organizers: Chris North, Richard May, Alex Endert, Wenwen Dou, Glenn Fink}
+\\
+
+%\cvlistitemstart{Program Committee}
+\cvlistitemstart{Program}
+{ECML-PKDD Workshop on Automating Data Science (AutoDS), 2021}
+\cvlistitemstart{Committee}
+{Eurographics Conference on Data Visualization (EuroVis), 2014-16, 2019-21}
+{ACM SIGMOD Workshop on Human-In-the-Loop Data Analytics (HILDA), 2016-20}
+\cvlistitem{IEEE Visualization Conference Doctoral Colloquium, 2010-11, 2019}
+\cvlistitem{VIS Workshop on Data Systems for Interactive Analysis (DSIA), 2019}
+\cvlistitem{International Conference on Computational Creativity, 2019}
+\cvlistitem{International (EDBT/ICDT) Workshop on Big Data Visual Exploration and Analytics (BigVis), 2018}
+\cvlistitem{IEEE VIS Workshop on Visual Analytics for Deep Learning (VADL), 2018}
+\cvlistitem{ACM IUI Workshop on Exploratory Search and Interactive Data Analytics, 2018}
+\cvlistitem{IEEE Conference on Visual Analytics Science and Technology (VAST), 2010-2012, 2015-17 \vspace{3pt}}
+\cvlistitem{SIGGRAPH Asia Symposium on Visualization, 2016-17}
+\cvlistitem{Grace Hopper Conference Gaming/Graphics/Animation (GFX) track, 2016}
+\cvlistitem{Supercomputing (SC14) Workshop on Visual Performance Analytics, 2014-2016}
+\cvlistitem{Grace Hopper Conference Gaming/Graphics/Animation (GFX) track, 2016}
+\cvlistitem{ACM SIGCHI Conference on Computer Human Interaction (CHI), 2012, 2016}
+\cvlistitem{ACM Intelligent User Interface (IUI) Workshop on Emotion and Visualization (EmoVis), 2016}
+\cvlistitem{Big Data Visual Analytics Symposium (BDVA), 2015}
+\cvlistitem{Big Data and Data Analytics in Collaboration Symposium, 2015}
+\cvlistitem{Eurographics Conference on Visualization (EuroVis) Short Paper Program, 2015}
+\cvlistitem{Eurographics/IEEE International Workshop on Visual Analytics (EuroVA), 2011-15}
+\cvlistitem{IEEE Conference on Information Visualization (InfoVis), 2013-14}
+\cvlistitem{IEEE VIS Workshop on Beyond Time and Errors (BELIV), 2014}
+\cvlistitem{International Conference on Information Visualization Theory and Applications (IVAPP) 2013-14}
+\cvlistitem{SPIE Visualization and Data Analysis (VDA), 2012-13}
+\cvlistitem{IEEE VisWeek Workshop on Beyond Time and Errors (BELIV), 2012}
+\cvlistitem{Foundation of Digital Games, 2012}
+\cvlistitem{International Provenance and Annotation Workshop, 2012}
+\cvlistitem{ACM SIGCHI Workshop on Beyond Time and Errors (BELIV), 2010}
+\cvlistitem{AAAI Spring Symposium on Technosocial Predictive Analytics, 2009}
+
+\cvlistitemstart{Invited Panels}
+{Shonan Seminar: Interactive Visualization for Interpretable Machine Learning, 2019}
+\cvlistitemstart{\& Workshops}
+{IEEE Symposium on Large Data Analysis and Visualization (LDAV). Panel: AI+VIS in the Era of Big Data, 2019}
+\cvlistitem{IEEE VIS Workshop on Machine Learning from User Interactions for Visualization and Analytics, 2019}
+\cvlistitem{IEEE VIS Workshop on Evaluation of Interactive Visual Machine Learning Systems, 2019}
+\cvlistitem{Dagstuhl Seminar: Visual Analytics of Multilayer Networks Across Disciplines, 2019}
+\cvlistitem{IEEE Symposium on Large Data Analysis and Visualization (LDAV). Panel: Progressive Visualization and Visual Analytics, 2018}
+\cvlistitem{Dagstuhl Seminar: Provenance and Logging for Sense Making, 2018}
+\cvlistitem{Dagstuhl Seminar: Progressive Data Analysis and Visualization, 2018}
+\cvlistitem{Dagstuhl Seminar: Automating Data Science, 2018}
+\cvlistitem{IEEE VIS Conference. Panel: Reflection on Reflection in Design Studies, 2017}
+\cvlistitem{Dagstuhl Seminar: Connecting Visualization and Data Management Research, 2017}
+\cvlistitem{Dagstuhl Seminar: Scientific Visualization, 2014}
+\cvlistitem{Dagstuhl Seminar: Evaluation in the Crowd: Crowdsourcing and Human-Centered Experiments, 2015}
+\cvlistitem{Dagstuhl Seminar: Connecting Performance Analysis and Visualization to Advance Extreme Scale Computing, 2014}
+\cvlistitem{Joint Statistical Meetings. Panel: User Interaction and Feedback: Data, Models, and Interfaces, 2013}
+\cvlistitem{Tufts World Health Day Conference, 2013}
+\cvlistitem{IEEE VAST Conference. Panel: VAST Challenge Future, 2012}
+\cvlistitem{IEEE InfoVis Conference. Panel: Process + Interaction + Insight: The Need for Analytic Provenance, 2011}
+\cvlistitem{IEEE VAST Conference. Panel: VAST Challenge Future, 2010}
+\cvlistitem{National Visual Analytics Consortium. Panel: High-Priority Research Directions for Visual Analytics, 2009}
+\cvlistitem{Third Annual DHS University Summit. Panel: Research to Reality, 2009}
+\cvlistitem{Third Annual DHS University Summit. Panel: Visual Analytics and Discrete Science Integration into the DHS Center of Excellence Program, 2009}
+\closesection{}
+
+
+
+\section{Reviewing Activities}
+
+\cvlistitemstart{Proposal}
+{National Science Foundation (NSF), 2021} %NSF CAREER panel Nov 18-19
+\cvlistitem{National Science Foundation (NSF), 2021} %NSF Science-of-Science proposal
+\cvlistitem{Mitacs Accelerate (Canada), 2021}
+\cvlistitem{National Science Foundation (NSF), 2020} %NSF CAREER virtual panel
+\cvlistitem{Cyprus Seeds Program, 2020}
+\cvlistitem{National Science Foundation (NSF), 2020} %NSF III Medium virtual panel
+\cvlistitem{Mitacs Accelerate (Canada), 2019}
+\cvlistitem{National Science Foundation (NSF), 2018} %NSF Career panel
+\cvlistitem{National Science Foundation (NSF), 2018} %one proposal from Pak Wong
+\cvlistitem{National Science Foundation (NSF), 2017} %one proposal from Chia Shen on Cyberlearning
+\cvlistitem{Natural Sciences and Engineering Research Council of Canada (NSERC), 2017} 
+\cvlistitem{National Science Foundation (NSF), 2016} %crii
+\cvlistitem{National Science Foundation (NSF), 2016} %career
+\cvlistitem{Mitacs Accelerate (Canada), 2016}
+\cvlistitem{National Science Foundation (NSF), 2015}
+\cvlistitem{Austrian Science Fund (FWF), 2015}
+\cvlistitem{Netherlands Organisation for Scientific Research (NWO), 2015}
+\cvlistitem{National Science Foundation (NSF), 2015}
+\cvlistitem{National Science Foundation (NSF), 2014}
+\cvlistitem{Austrian Science Fund (FWF), 2014}
+\cvlistitem{National Science Foundation (NSF), 2014}
+\cvlistitem{DIGITEO and DigiCosme (France), 2014}
+\cvlistitem{National Science Foundation (NSF), 2013}
+\cvlistitem{National Science Foundation (NSF), 2013}
+\cvlistitem{National Science Foundation (NSF), 2013}
+\cvlistitem{Austrian Science Fund (FWF), 2012}
+\cvlistitem{National Science Foundation (NSF), 2012}
+\cvlistitem{Natural Sciences and Engineering Research Council of Canada (NSERC), 2012}
+\cvlistitem{Research Councils UK (RCUK), 2012}
+\cvlistitem{National Science Foundation (NSF), 2011}
+\cvlistitem{Greek Ministry of Education, Lifelong Learning and Religious Affairs and the European Social Fund, 2011}
+\cvlistitem{National Science Foundation (NSF), 2010}
+\cvlistitem{The Vienna Science and Technology Fund (WWTF), 2010}
+
+\cvlistitemstart{Book Proposal}
+{CRC Press, 2020} %Experimental Research Methods for Data Visualization, by Madison Elliott
+\cvlistitem{Chapman \& Hall/CRC, 2018} %Interactive web-based data visualization with R and plotly, by Carson Sievert
+\cvlistitem{Morgan \& Claypool, 2016} %Semantic Interaction for Visual Analytics, by Alex Endert
+\cvlistitem{Morgan Kaufmann, 2016}  %Visual Thinking for Design, second edition, by Colin Ware
+\cvlistitem{Wiley, 2016}  %Visual Analytics: From Personal Data to Big Data Analysis from Jonathan Roberts Panagiotis Ritsos & Christopher Headleand.
+\cvlistitem{Morgan Kaufmann, 2014}  %Personal Control: Theory, Research and Practice in the first 50 Years” by Frank Infurna and John Reich
+
+\cvlistitemstart{Journal}
+{IEEE Transactions on Computer Graphics and Visualization (TVCG), 2005, 2007-2021}
+\cvlistitem{IEEE Computer Graphics and Applications (CG\&A), 2009-2017, 2019-21}
+\cvlistitem{ACM Transactions on Interactive Intelligent Systems (TiiS), 2012-2021}
+\cvlistitem{PLOS ONE, 2020}
+\cvlistitem{IEEE Transactions on Learning Technologies, 2020}
+\cvlistitem{Heliyon (Cell Press), 2020}
+\cvlistitem{Journal of Experimental Psychology: Applied, 2020}
+\cvlistitem{Information Visualization (Palgrave/Sage), 2009-2014, 2019}
+\cvlistitem{ACM Transactions on Computing Education, 2019}
+\cvlistitem{International Journal of Computer Assisted Radiology and Surgery, 2018}
+\cvlistitem{Journal of Visual Communication in Medicine (Taylor \& Francis), 2018}
+\cvlistitem{Accounting Information Systems (Elsevier), 2017}
+\cvlistitem{Computer Graphics Forum (Wiley), 2009, 2013-2014, 2017}
+\cvlistitem{ACM Transactions on Intelligent Systems and Technology (TIST), 2012, 2017}
+\cvlistitem{Applied Ergonomics (Elsevier), 2017}
+\cvlistitem{Computers, Environment and Urban Systems (Elsevier), 2009-2017}
+\cvlistitem{ACM SIGMOD Record, 2016}
+\cvlistitem{Journal of Visual Languages and Computing (Elsevier), 2016}
+\cvlistitem{Journal of the American Medical Informatics Association (JAMIA), 2016}
+\cvlistitem{Information and Management (Elsevier), 2016}
+\cvlistitem{IEEE Transactions on Knowledge and Data Engineering (TKDE), 2015-16}
+\cvlistitem{International Journal of Human-Computer Interaction (Taylor \& Francis), 2015}
+\cvlistitem{American Statistician (Taylor \& Francis), 2014-2015}
+\cvlistitem{Computers and Graphics (Elsevier), 2010, 2015}
+\cvlistitem{International Journal of Human-Computer Studies (Elsevier), 2015}
+\cvlistitem{Computing and Visualization in Science (Springer), 2014}
+\cvlistitem{ACM Transactions on Computer Human Interaction (TOCHI), 2012-2014}
+\cvlistitem{Information Technology (Gruyter Oldenbourg), 2014}
+\cvlistitem{K\"{u}nstliche Intelligenz (German AI Journal, Springer), 2011-12}
+\cvlistitem{Journal of Geographical Information Science (Taylor \& Francis), 2009-2010}
+\cvlistitem{The Visual Computer (Springer), 2010}
+
+\cvlistitemstart{Conference}
+{Eurographics Conference on Data Visualization (Eurovis), 2005, 2010-2016, 2020-21}
+\cvlistitem{ACM Special Interest Group on Computer Human Interaction (CHI), 2010-2021}
+\cvlistitem{ACM Symposium on User Interface Software and Technology (UIST), 2012, 2014-2015, 2018}
+\cvlistitem{IEEE Pacific Visualization, 2011-12, 2015-2017}
+\cvlistitem{ACM Computer-Supported Cooperative Work (CSCW), 2016}
+\cvlistitem{IEEE Conference on Information Visualization (InfoVis), 2008-2011, 2013-2015}
+\cvlistitem{IEEE Symposium/Conference on Visual Analytics Science and Technology (VAST), 2007, 2009-2012, 2015-2020}
+\cvlistitem{ACM SIGCHI Student Research Competition, 2014}
+\cvlistitem{Conference on Tangible, Embedded, and Embodied Interaction (TEI), 2014}
+\cvlistitem{IEEE Symposium on Biological Data Visualization (BioVis), 2013}
+\cvlistitem{International Conference on Intelligent User Interfaces (IUI), 2013}
+\cvlistitem{SPIE Visualization and Data Analysis (VDA), 2009, 2012-2013}
+\cvlistitem{Computer Graphics International Conference, 2005, 2012}
+\cvlistitem{IEEE Conference on Visualization (SciVis), 2008-2011}
+\cvlistitem{ACM Interactive Tabletops and Surfaces Conference, 2011}
+\cvlistitem{ACM SIGGRAPH Asia, 2009}
+
+\cvlistitemstart{Workshop}
+{IEEE Visual Analytics Science and Technology (VAST) Challenge, 2009-2010, 2012-2017}
+\cvlistitem{NSF Data Science Workshop, 2015}
+\cvlistitem{Big Data Visual Analytics Symposium (BDVA), 2015}
+\cvlistitem{Big Data and Data Analytics in Collaboration Symposium, 2015}
+\cvlistitem{Supercomputing (SC14) Workshop on Visual Performance Analytics, 2014}
+\cvlistitem{CHI/VisWeek Workshop on Beyond Time and Errors (BELIV), 2008-2014}
+\cvlistitem{EuroVis Workshop on Reproducibility, Verification, and Validation in Visualization, 2013\vspace{3pt}}
+\cvlistitem{IEEE VR Workshop on Off-The-Shelf Virtual Reality, 2012}
+\closesection{}
+
+
+\section{Invited Talks}
+\vspace{-0.75em}
+\input{talks.tex}
+\closesection{}
+
+\section{Current Advisees}
+\cvitem{PhD}{\textbf{Ashley Suh}.  Department of Computer Science.\\{(Class of 2018)}}
+\cvitem{}{\textbf{Gabriel Appleby}.  Department of Computer Science.\\{(Class of 2018)}}
+\cvitem{}{\textbf{Brian Montambault}.  Department of Computer Science.\\{(Class of 2020)}}
+\cvitem{}{\textbf{Camelia Brumar}.  Department of Computer Science.\\{(Class of 2020)}}
+\cvitem{}{\textbf{Assaf Benchetrit}.  Interdisciplinary Studies (Dance and Computer Science).\\{(Class of 2021)}}
+%\cvitem{Co-Advised PhD}
+%{\textbf{Wenbo Tao}. MIT.  CSAIL\\{(Primary Advisor: Mike Stonebraker)}}
+%\cvitem{}{\textbf{Yifan Wu}. Berkeley. Computer Science \\{(Primary Advisor: Joe Hellerstein)}}
+%\cvitem{PhD Committee}
+%{\textbf{Zhe Wang}.  University of Arizona\\{(Advisor: Carlos Scheidegger)}}
+%\cvitem{}{\textbf{Rafael Veras}. University of Ontario Institute of Technology\\{(Advisor: Christopher Collins)}}
+%\cvitem{}
+%{\textbf{Michael Curry}.  MIT.  Department of Aeronautics and Astronautics\\{(Advisor: Daniel Hastings)}}
+%{\textbf{Subhajit Das}.  Georgia Tech.  School of Interactive Computing\\{(Advisor: Alex Endert)}}
+%\cvitem{Master's}
+%{\textbf{Yuexing Hao}.  Tufts University.  Department of Computer Science.\\{(Class of 2020)}}
+%\cvitem{}{\textbf{Maja Milosavljevic}.  Tufts University.  Department of Computer Science.\\{(Class of 2016)}}
+%{\textbf{Brian Montambault}.  Tufts University.  Department of Computer Science.\\{(Class of 2017)}}
+%\cvitem{}{\textbf{Ki Ki Chan}.  Tufts University.  Department of Computer Science.\\{(Class of 2018)}}
+%\cvitem{}{\textbf{Yedi Wang}.  Tufts University.  Department of Computer Science.\\{(Class of 2016)}}
+%\cvitem{Post-bac}
+\closesection{}
+
+%\section{Previous Post-Docs}
+%\closesection{}
+
+\section{Previous Students - Thesis Advisor}
+\cvitem{PhD}{\textbf{Ab Mosca}.  Tufts University.  Department of Computer Science. 2021
+\\Thesis: \textit{``Communicating with Visualization: This Importance of Simplicity''}
+\\Committee: Rob Jacob, Megan Monroe, Norbert Wilson, Kristi Potter, Alvitta Ottley
+\\{after graduation: Assistant Teaching Professor, Northeastern University}
+}
+
+\cvitem{}{\textbf{Marianne Procopio}.  Tufts University.  Department of Computer Science. 2020
+\\Thesis: \textit{``Progressive Visualization for Big Data Exploratory Analysis''}
+\\Committee: Rob Jacob, Carlos Scheidegger, Eugene Wu, Daniel Hannon
+\\{after graduation: Technical Staff, MIT Lincoln Lab}
+}
+
+
+\cvitem{}{\textbf{Dylan Cashman}.  Tufts University.  Department of Computer Science. 2020
+\\Thesis: \textit{``Bridging the Human-Machine Gap in Applied Machine Learning with Visual Analytics''}
+\\Committee: Rob Jacob, Michael Gleicher, Michael Hughes, Xiaozhe Hu
+\\{after graduation: Senior Expert Data Scientist, Novartis}
+}
+
+\cvitem{}{\textbf{Alvitta Ottley}.  Tufts University.  Department of Computer Science. 2016
+\\Thesis: \textit{``Toward Personalized Adaptive Visualizations''}
+\\Committee: Rob Jacob, Holly Taylor, Sam Guyer, Cristina Conati
+\\{after graduation: Assistant Professor at Washington University in Saint Louis}
+}
+
+\cvitem{}{\textbf{Eli Brown}.  Tufts University.  Department of Computer Science. 2015
+\\Thesis: \textit{``Learning from Users’ Interactions with Visual Analytics Systems''}
+\\Committee: Rob Jacob, Gregory Crane, Misha Kilmer, Chris North
+\\{after graduation: Assistant Professor at DePaul University}
+}
+
+\cvitem{}{\textbf{Jordan Crouser}.  Tufts University.  Department of Computer Science. 2013
+\\Thesis: \textit{``Toward Theoretical Measures for Systems Involving Human Computation''}
+\\Committee: Rob Jacob, Ben Hescott, Mary Glaser, Matthew Schmidt
+\\\textbf{IEEE VGTC PhD Dissertation Award Honorable Mention}
+\\{after graduation: MIT Lincoln Lab}
+\\{currently: Assistant Professor at Smith College}
+}
+
+\cvitem{Co-Advised PhD}
+{\textbf{Wenbo Tao}. MIT.  CSAIL. 2020\\{(Primary Advisor: Mike Stonebraker)}\\{after graduation: Facebook}}
+\cvitem{}{\textbf{Leilani Battle}.  MIT.  CSAIL. 2017\\{Primary Advisor: Mike Stonebraker}\\{after graduation: Assistant Professor at the University of Maryland}}
+\cvitem{}{\textbf{Michael Curry}.  MIT.  Department of Aeronautics and Astronautics. 2017\\{Primary Advisor: Daniel Hastings}\\{after graduation: Draper}}
+\cvitem{}{\textbf{Beste Yuksel}. Tufts University. Department of Computer Science. 2016\\{Primary Advisor: Rob Jacob}\\{after graduation: Assistant Professor at the University of San Francisco}}
+\cvitem{}{\textbf{Dan Afergan}. Tufts University. Department of Computer Science. 2014\\{Primary Advisor: Rob Jacob}\\{after graduation: Google}}
+\cvitem{}{\textbf{Evan Peck}. Tufts University. Department of Computer Science. 2014\\{Primary Advisor: Rob Jacob}\\{after graduation: Assistant Professor at Bucknell}}
+
+\cvitem{Post-Doc}{\textbf{Michael Behrisch}.  Tufts University.  Department of Computer Science. 2019-2019
+\\{PhD from University of Konstanz in 2017}
+\\{after post-doc: Assistant Professor at the University of Utrecht (Netherlands)}
+}
+
+\cvitem{}{\textbf{Shah Rukh Humayoun}.  Tufts University.  Department of Computer Science. 2017-2019
+\\{PhD from Sapienza University of Rome , 2011}
+\\{after post-doc: Assistant Professor at the San Francisco State University}
+}
+\cvitem{}{\textbf{Lane Harrison}.  Tufts University.  Department of Computer Science. 2013-2015
+\\{PhD from UNC Charlotte, 2013}
+\\{after post-doc: Assistant Professor at WPI}
+}
+
+
+\cvitem{Master's} 
+{\textbf{Rui Chen}.  Tufts University.  Department of Computer Science. 2021\\{after graduation: Machine Learning Engineer at Avalara}}
+\cvitem{}{\textbf{Shannon Robinson}.  Tufts University.  Department of Computer Science. 2020\\{after graduation: Software Engineer at EditShare}}
+\cvitem{}{\textbf{Brian Montambault}.  Tufts University.  Department of Computer Science. 2020\\{after graduation: PhD student at Tufts}}
+\cvitem{}{\textbf{Kenny Alperin}.  Tufts University.  Department of Computer Science. 2019\\{after graduation: MIT Lincoln}}
+\cvitem{}{\textbf{Alexandra Clifford}.  Tufts University.  Department of Computer Science. 2019\\{after graduation: MIT Lincoln}}
+\cvitem{}{\textbf{Melissa Iori}. Tufts University. Department of Computer Science.  2017\\{after graduation: Draper Fellow}}
+\cvitem{}{\textbf{Anzu Hakone}.  Tufts University.  Department of Computer Science. 2017\\{after graduation: Software Engineering at the Broad Institute}}
+\cvitem{}{\textbf{Erden Oktay}.  Tufts University.  Department of Computer Science. 2017\\{after graduation: Programmer Analyst at Tufts Medical School}}
+\cvitem{}{\textbf{Pratham Joshi}.  Tufts University.  Department of Computer Science. 2017\\{after graduation: Programmer Analyst at Tufts Medical School}}
+\cvitem{}{\textbf{Filipe Barroso}.  Tufts University.  Department of Computer Science. 2017\\after graduation: Software Engineer at IBM}
+\cvitem{}{\textbf{Fumeng Yang}.  Tufts University.  Department of Computer Science. 2016\\{after graduation: PhD student at Brown University}}
+\cvitem{}{\textbf{Dylan Cashman}.  Tufts University.  Department of Computer Science. 2016\\{after graduation: PhD student at Tufts University}}
+\cvitem{}{\textbf{Jared Chandler}.  Tufts University.  Department of Computer Science. 2016\\{after graduation: PhD student at Tufts University}}
+\cvitem{}{\textbf{Stephen McDonald}.  Tufts University.  Department of Computer Science. 2015\\{after graduation: GIS Fellow at the Center for Geographic Analysis at Harvard}}
+\cvitem{}{\textbf{Guvenc Usanmaz}.  Tufts University.  Department of Computer Science. 2014\\{after graduation: Research/Teaching Assistant at the University of Tekirdag (Turkey)}}
+\cvitem{}{\textbf{Jason Jacob}.  Tufts University.  Department of Computer Science. 2014\\{after graduation: Draper Labs}}
+\cvitem{}{\textbf{Helen (Jieqiong) Zhao}.  Tufts University.  Department of Computer Science. 2013\\{after graduation: PhD student at Purdue University}}
+\cvitem{}{\textbf{Orkun Ozbek}.  Tufts University.  Department of Computer Science. 2013\\{after graduation: Software Engineer at TripAdvisor}}
+\cvitem{}{\textbf{Samuel (Shaomeng) Li}.  Tufts University.  Department of Computer Science. 2012\\{after graduation: PhD student at University of Oregon}}
+%\cvitem{}{\textbf{Takao Tanizawa}.  Tufts University.  Department of Computer Science. 2011\\{after graduation: Senior Software Engineer at Murata Machinery USA}}
+\cvitem{}{\textbf{Jeremy Freeman}.  Tufts University.  Department of Computer Science. 2011\\{after graduation: Java Engineer at Zoom Information}}
+\cvitem{}{\textbf{Michael Degatano}.  Tufts University.  Department of Computer Science. 2011\\{after graduation: Software Engineer at Pegasystems}}
+\cvitem{}{\textbf{Daniel Kee}.  Tufts University.  Department of Computer Science. 2011\\{after graduation: Software Engineer at iRobot}}
+\cvitem{Senior Thesis}{\textbf{Daniel Kass}.  Tufts University.  Department of Computer Science and Communications and Media Studies. (co-advisor: James Ennis). 2013\\{after graduation: Developer, Technology Lead at Layerframe}}
+\cvitem{}{\textbf{Connor Gramazio}.  Tufts University.  Department of Computer Science. 2012\\{after graduation: PhD student at Brown University}}
+\cvitem{Senior Project}{\textbf{Shana Friedman}.  Tufts University.  Department of Computer Science and Communications and Media Studies. (co-advisor: Howard Woolf). 2015\\{after graduation: Apple}}
+\cvitem{}{\textbf{Liz Salowitz}.  Tufts University.  Department of Computer Science. 2013\\{after graduation: Project Manager at Microsoft}}
+\cvitem{Post-Bac}{\textbf{Jared Chandler}.  Tufts University.  Department of Computer Science. 2014\\{after graduation: Master's student at Tufts}}
+\cvitem{}{\textbf{Shannon Robinson}.  Tufts University.  Department of Computer Science.\\{after graduation: PhD student at Tufts}}
+\closesection{}
+
+\section{Previous Students - Committee Member}
+\cvitem{PhD Thesis Committee (External)}
+{\textbf{Roger Almeida Leite}.  TU Wien (Vienna Univerity of Technology, Austria). 2021\\{Thesis Advisor: Silvia Miksch}\\{after graduation: Tricentis}} %Senior UX Designer 
+\cvitem{}{\textbf{Subhajit Das}.  Georgia Tech.  School of Interactive Computing. 2021\\{Thesis Advisor: Alex Endert}\\{after graduation: Amazon}} %Applied Scientist
+\cvitem{}{\textbf{Bo Kang}.  Ghent University (Belgium). 2019\\{Thesis Advisors: Tijl De Bie and Jefrey Lijffijt}\\{after graduation: Postdoc at Ghent}} %Dept of Electronics and Information Systems. 
+\cvitem{}{\textbf{Dereck J Toker}.  University of British Columbia (UBC). 2019\\{Thesis Advisor: Cristina Conati}\\{after graduation: TBD}}
+\cvitem{}{\textbf{Zhe Wang}.  University of Arizona. 2019\\{Thesis Advisor: Carlos Scheidegger}\\{after graduation: ASML}}
+\cvitem{}{\textbf{Rafael Veras Guimar\~{a}es}.  University of Ontario Institute of Technology. 2019\\{Thesis Advisor: Christopher Collins}\\{after graduation: Huawei Technologies}} %HCI Researcher
+\cvitem{}{\textbf{Qing Chen}.  Hong Kong University of Science and Technology. 2018\\{Thesis Advisor: Huamin Qu}\\{after graduation: Postdoc at INRIA\\currently: Assistant Professor at Tongji University (China)}}
+\cvitem{}{\textbf{Jessica Zeitz Self}.  Virginia Tech.  Department of Computer Science. 2016\\{Thesis Advisor: Chris North}\\{after graduation: Assistant Professor at Mary Washington University}}
+\cvitem{}{\textbf{Steven Gomez}. Brown University. Department of Computer Science. 2015\\{Thesis Advisor: David Laidlaw}\\{after graduation: MIT Lincoln Lab}}
+
+\cvitem{PhD Thesis Committee (Tufts)}
+{\textbf{Sam Hincks}. Tufts University. Department of Computer Science. 2019\\{Thesis Advisor: Rob Jacob}\\{after graduation: TBD}}
+\cvitem{}{\textbf{Sara Amin}. Tufts University. Department of Computer Science. 2019\\{Thesis Advisor: Soha Hassoun}\\{after graduation: Walmart}}
+\cvitem{}{\textbf{Michael Shah}. Tufts University. Department of Computer Science. 2017\\{Thesis Advisor: Sam Guyer}\\{after graduation: Lecturer at Northeastern University}}
+\cvitem{}{\textbf{Robert D'Angelo}. Tufts University. Department of Electrical and Computer Engineering. 2017\\{Thesis Advisor: Sameer Sonkusale}\\{after graduation: Draper}}
+\cvitem{}{\textbf{Gordon Briggs}. Tufts University. Department of Computer Science. 2015\\{Thesis Advisor: Matthias Scheutz}\\{after graduation: Naval Research Lab}}
+\cvitem{}{\textbf{Jingjing Liu}. Tufts University. Department of Computer Science. 2014\\{Thesis Advisor: Carla Brodley}\\{after graduation: Software Engineer at ZenMarketing}\\{currently: Google}}
+\cvitem{}{\textbf{Amelio Vazquez-Reina}. Tufts University. Department of Computer Science. 2012\\{Thesis Advisor: Eric Miller}\\{after graduation: BBN / Raytheon}}
+\cvitem{}{\textbf{James Won}. Tufts University. Department of Mechanical Engineering. 2012\\{Thesis Advisor: Daniel Hannon}\\{after graduation: MIT Lincoln Lab}}
+\cvitem{}{\textbf{Erin Solovey}. Tufts University. Department of Computer Science. 2011\\{Thesis Advisor: Robert Jacob}\\{after graduation: NSF CI-Fellow at MIT with Missy Cummings}\\{currently: Assistant Professor at Drexel}}
+
+\cvitem{PhD Thesis Committee (Charlotte)}
+{\textbf{Thomas Butkiewicz}. UNC Charlotte. Department of Computer Science.  2010\\{Thesis Advisor: Zachary Wartell}\\{after graduation: Research Assistant Professor at the University of New Hampshire}}
+
+\cvitem{Master's Thesis Committee}{\textbf{Quinn Pham}. Tufts University. Dept of Psychology. 2021\\{Thesis Advisor: Paul Muentener}\\{after graduation: TBD}}
+\cvitem{}{\textbf{Peter Taylor-Brown}. Tufts University. Dept of Mechanical Engineering. 2013\\{Thesis Advisor: Robert Hannemann}\\{after graduation: Technical Design Lead at Layerframe}}
+\cvitem{} {\textbf{Ginette Wessel}. UNC Charlotte. Department of Architecture. 2009\\{Thesis Advisor: Eric Sauda}\\{after graduation: PhD student at UC Berkeley}}
+\cvitem{Senior Thesis Committee}{\textbf{Andrew (AJ) Jenkins}.  Tufts University.  Department of Computer Science. 2014 \\{Thesis Advisor: Rob Jacob}\\{after graduation: Software Engineer at Kyruus}}
+\closesection{}
+
+\section{Undergraduate Research}
+\cvitem{2020}
+{\textbf{Kate Hanson, Helen Li, Andrew X. Wang, Anna Yuen, Zeyu Chang} (Tufts)\\VALT Undergraduate Research}
+\cvitem{}{\textbf{Jesus Garcia, Quinn Pham} (Tufts)\\NSF TRIPODS DIAMONDS Scholar Program}
+\cvitem{}{\textbf{Tony Goss, Kate Hansen, Helen Li} (Tufts)\\VALT Summer Research}
+\cvitem{2019}
+{\textbf{Sammy Stolzenbach, Kate Hanson, William Zhang, Si Chen} (Tufts)\\VALT Summer Research}
+\cvitem{2018}
+{\textbf{William Zhang, Si Chen, Leah Stern, Charlie Caron} (Tufts)\\VALT Summer Research}
+\cvitem{2017}
+{\textbf{Julia Romero} (Texas Austin)\\NSF REU}
+\cvitem{}{\textbf{Meredith Clarke, Rebecca Redelmeier} (Tufts), \textbf{Alan Luo} (Choate Rosemary Hall High School)\\VALT Summer Research}
+\cvitem{}{\textbf{Tal August} (Tufts)\\VALT Undergraduate Research}
+\cvitem{2016}{\textbf{Johnny Lau}, \textbf{Peter Lee} (Tufts)\\VALT Summer Research}
+\cvitem{}{\textbf{Kabir Singh}, \textbf{Tal August} (Tufts)\\VALT Undergraduate Research}
+\cvitem{2015}{\textbf{Anzu Hakone}, \textbf{Nathan Winters} (Tufts)\\VALT Undergraduate Research}
+\cvitem{}{\textbf{Jamal Thorne} (Morehouse College)\\Leadership Alliance Program}
+\cvitem{2014}{\textbf{Simon Warchol}, \textbf{Philippe Mamann}, \textbf{Robert Ruenes}, \textbf{Karthic Aragam} (Tufts)\\VALT Undergraduate Research}
+\cvitem{2013}{\textbf{Robert Ruenes}, \textbf{Karthic Aragam} (Tufts)\\VALT Undergraduate Research}
+\cvitem{2012}{\textbf{Blossom Metevier} (University of Maryland Baltimore County)\\Summer Research Early Identification Program}
+\cvitem{}{\textbf{Liz Salowitz}, \textbf{Jillian Silver} (Tufts)\\VALT Summer Research}
+\cvitem{2011}{\textbf{Austin Tucker}, \textbf{Jamal Thorne}, \textbf{Brockton Starling} (Morehouse College)\\Leadership Alliance Program}
+\closesection{}
+
+\section{Student Awards, Honors, and Research Internships}
+\cvitem{2021}{\textbf{Ashley Suh}. Finalist for the 2021 NCWIT Collegiate Award\\Internship at Novartis}
+\cvitem{}{\textbf{Ab Mosca}. Tufts 23rd Annual Graduate Award for SOE Graduate Outstanding Graduate Contributor to Engineering Education}
+\cvitem{}{\textbf{Yuexing Hao}. Graduate Student Research Competition Award\\Internship at Keva Health}
+\cvitem{}{\textbf{Brian Montambault}. Internship at the SSI Group}
+\cvitem{}{\textbf{Gabriel Appleby}. Internship at Novartis}
+\cvitem{}{\textbf{Rui Chen}. Internship at Avalara}
+\cvitem{}{\textbf{Camelia Brumar}. Internship at Alife Health}
+\cvitem{2020}{\textbf{Ab Mosca}. Internship at In-Q-Tel}
+\cvitem{}{\textbf{Camelia Brumar}. Third place in the International Major League Hacking Hackathon}
+\cvitem{2018}{\textbf{Dylan Cashman}. Internship at IBM Research}
+\cvitem{}{\textbf{Ab Mosca}. Internship at National Renewable Energy Lab}
+\cvitem{}{\textbf{Shannon Robinson}. Internship at MIT Lincoln Lab}
+\cvitem{}{\textbf{Ashley Suh}. Loevner Fellowship (Tufts)}
+\cvitem{2017}{\textbf{Maja Milosavljevic}. Google Lime Fellowship}
+\cvitem{2016}{\textbf{Melissa Iori}. Draper Fellow}
+\cvitem{}{\textbf{Maja Milosavljevic}. NSA Mathematics and Computer Science Student Scholarship
+  \\Honorable Mention, NSF Graduate Research Fellowship}
+\cvitem{}{\textbf{Marianne Procopio}. MIT Lincoln Scholars Fellowship}
+\cvitem{}{\textbf{Dylan Cashman}. Internship at PARC
+  \\Provost's Fellowship (Tufts)}
+\cvitem{}{\textbf{Alvitta Ottley}. Heidelberg Laureate (Heidelberg Laureate Forum Foundation)}
+\cvitem{2015}{\textbf{Dylan Cashman}. Internship at MIT Lincoln Lab}
+\cvitem{2014}{\textbf{Alvitta Ottley}. Kirk and Janelle Loevner Fellowship (Tufts)
+  \\Internship at IBM Research (Almaden)}
+\cvitem{}{\textbf{Jillian Silver}. James Schmolze Prize for Excellence in Computer Science (Tufts)}
+\cvitem{}{\textbf{Eli Brown}. Internship at Microsoft Research (Redmond)}  
+\cvitem{}{\textbf{Max Goldstein}. Visualizing Research at Tufts Award: Software}
+\cvitem{2013}{\textbf{Liz Salowitz}. De Florez Prize in Human Engineering (Tufts)}  
+\cvitem{}{\textbf{Jayme Woogerd}. American Association of University Women Fellowship}
+\cvitem{}{\textbf{Eli Brown}. Internship at the Pacific Northwest National Lab}
+\cvitem{}{\textbf{Alvitta Ottley}. Internship at IBM Research (Cambridge)}
+\cvitem{2012}{\textbf{Jordan Crouser}. Internship at MIT Lincoln Lab}
+\cvitem{}{\textbf{Connor Gramazio}. Senior Research Thesis with Highest Honor (Tufts)
+  \\NSF Graduate Research Fellowship
+  \\Honorable Mention, CRA Undergraduate Research Award
+  \\Internship at Google Research Cambridge}
+\cvitem{}{\textbf{Jillian Silver}. Karno Dean's Award for Academic Excellence and Leadership (Tufts)
+  \\NSF Student Travel Award / Grace Hopper Scholarship}
+\cvitem{}{\textbf{Liz Salowitz}. NSF Student Travel Award / Grace Hopper Scholarship}
+\cvitem{2011}{\textbf{Connor Gramazio}. De Florez Prize in Human Engineering (Tufts)}
+\cvitem{}{\textbf{Jordan Crouser}. Visualizing Research at Tufts Award: Illustrations}
+\closesection{}
+
+\section{Teaching}
+\cvlistitemstart{Fall 2021}
+{Human Computer Interaction, CS 171, Tufts University (45 students)}
+%
+\cvlistitemstart{Spring 2021}
+{Visual Analytics, COMP 152-02, Tufts University (35 students)}
+%
+\cvlistitemstart{Fall 2020}
+{Visualization Seminar, COMP 250-02, Tufts University (13 students)}
+ \cvlistitem{PhD Qualifying Exam: Jamie Heller, Leon Wang}
+% 
+ \cvlistitemstart{Spring 2020}
+{Computer Graphics, COMP 175, Tufts University (21 students)}
+%
+%
+\cvlistitemstart{Fall 2019}
+{Visual Analytics, COMP 150-04, Tufts University (35 students)}
+% \cvlistitem{PhD Qualifying Exam: Matthew Russell, Leon Wang}
+%
+\cvlistitemstart{Spring 2019}
+{Computer Graphics, COMP 175, Tufts University (20 students)}
+ \cvlistitem{PhD Qualifying Exam: Ab Mosca}
+% 
+\cvlistitemstart{Fall 2018}
+{Directed Studies: Ashley Suh}
+%
+\cvlistitemstart{Spring 2018}
+{Computer Graphics, COMP 175, Tufts University (25 students)}
+ \cvlistitem{Directed Studies: Ab Mosca, Shannon Robinson}
+%
+\cvlistitemstart{Fall 2017}
+{Visualization, COMP 177, Tufts University (40 students)}
+ \cvlistitem{PhD Qualifying Exam: Dylan Cashman}
+%
+\cvlistitemstart{Spring 2017}
+{Directed Studies: Kabir Singh, Tara Kola, Ab Mosca}
+ \cvlistitem{PhD Qualifying Exam: Marianne Procopio}
+%
+\cvlistitemstart{Fall 2016}
+{Directed Studies: Anzu Hakone}
+%
+\cvlistitemstart{Spring 2016}
+{Computer Graphics, COMP 175, Tufts University (25 students)}
+\cvlistitem{Visualization Seminar, COMP 250-VIS, Tufts University (13 students)}
+\cvlistitem{Directed Studies: Soubhik Barari}
+%
+\cvlistitemstart{Fall 2015}
+{Visualization, COMP 150-02, Tufts University (33 students)}
+\cvlistitem{PhD Qualifying Exam: Sam Hincks, Hugo Alves Akitaya}
+%
+\cvlistitemstart{Spring 2015}{Computer Graphics, COMP 175, Tufts University (15 students)}
+ \cvlistitem{Visualization Seminar, COMP 250-VIS, Tufts University (6 students)}
+ \cvlistitem{Directed Studies: Anzu Hakone, Jaime Sanchez}
+ \cvlistitem{Senior Capstone Supervisor: Hyung-seo Park, Allison Tai}
+ \cvlistitem{PhD Qualifying Exam: Fumeng Yang, Tomoki Shibata, Rishit Sheth}
+%
+\cvlistitemstart{Fall 2014}{Visualization, COMP 150-07, Tufts University (61 students)}
+  \cvlistitem{Senior Capstone Supervisor: Hyung-seo Park, Allison Tai}
+  \cvlistitem{Directed Studies: Fumeng Yang}
+  \cvlistitem{Internship (CPT) Supervision: Hyung-seo Park (Microsoft)}
+%
+\cvlistitemstart{Summer 2014}{Internship (CPT) Supervision: 
+  Stefan Dimitrov (Microsoft), 
+  Hyung-seo Park (Microsoft), 
+  Ray Xiao (TripAdvisor)}
+%
+\cvlistitemstart{Spring 2014}{Computer Graphics, COMP 175, Tufts University (21 students)}
+%
+\cvlistitemstart{Fall 2013}{Directed Studies: Guvenc Usanmaz}
+ \cvlistitem{Internship (CPT) Supervision: Hyung-seo Park (Google)}
+ \cvlistitem{PhD Qualifying Exam: Beste Yuksel}
+%
+\cvlistitemstart{Summer 2013}{Directed Studies: Jason Jacob}
+  \cvlistitem{Internship (CPT) Supervision: Hyung-seo Park (Athena Health)}
+%
+\cvlistitemstart{Spring 2013}{Visualization, COMP 150-02, Tufts University (44 students)}
+  \cvlistitem{Directed Studies: Liz Salowitz}
+%
+\cvlistitemstart{Fall 2012}{Visual Analytics and Provenance, COMP 250-02, Tufts University (12 students)}
+  \cvlistitem{Directed Studies: Dan Kass}
+  \cvlistitem{PhD Qualifying Exam: Eli Brown, Alvitta Ottley, Megan Strait}
+%
+\cvlistitemstart{Spring 2012}{Introduction to Computer Science, COMP 11, Tufts University (118 students)}
+  \cvlistitem{Directed Studies: Orkun Ozbek}
+%
+\cvlistitemstart{Fall 2011}{Computer Graphics, COMP 175, Tufts University (13 students)}
+  \cvlistitem{Directed Studies: Eli Brown}
+  \cvlistitem{PhD Qualifying Exam: Dan Afergan}
+%
+\cvlistitemstart{Spring 2011}{Visualization, COMP 150-07, Tufts University (18 students)}
+  \cvlistitem{Directed Studies: Jeremy Freeman, Connor Gramazio, Garth Griffin, Samuel Li}
+%
+\cvlistitemstart{Fall 2010}{Topics in Visual Analytics, COMP 150-12, Tufts University (10 students)}
+%
+\cvlistitemstart{Summer 1999}{Instructor for Intro to Computer Science, Center for Talented Youth (CTY) at Stanford University}
+%
+\cvlistitemstart{1994-96}{(Head) Teaching Assistant for Programming in C, Programming in Pascal, and Intro to Computer Literacy, Johns Hopkins University}
+%
+%\cventry{Summer 1996}{Head Teaching Assistant}{Dept of Computer Science} {Johns Hopkins University}{} {Course: Programming in C}
+%\cventry{Fall 1995}{Teaching Assistant}{Dept of Computer Science} {Johns Hopkins University}{} {Course: Programming in Pascal}
+%\cventry{Summer 1995}{Head Teaching Assistant}{Dept of Computer Science} {Johns Hopkins University}{} {Course: Programming in Pascal}
+%\cventry{Spring 1995}{Teaching Assistant}{Dept of Computer Science} {Johns Hopkins University}{} {Course: Intro to Computer Literacy}
+%\cventry{Fall 1994}{Head Teaching Assistant}{Dept of Computer Science} {Johns Hopkins University}{} {Course: Programming in Pascal}
+\closesection{}
+
+
+\section{University Services}
+\cvlistitemstart{Tufts University} 
+{School of Engineering Graduate School Council (2021-present)}
+\cvlistitem {Tufts Faculty Senate (2019-present)}
+\cvlistitem {Tufts Faculty Senate Committee on University Budget (2021-present)}
+\cvlistitem {Tufts Faculty Senate Committee on Research and Scholarship (2019-2021)}
+\cvlistitem {School of Engineering Academic Standing Committee (2015-2019)}
+\cvlistitem {School of Engineering Internal Transfer Committee (2015-2017)}
+\cvlistitem {Reviewer for the ExCollege (2016-18)}
+\cvlistitem {Tufts University Equal Educational Opportunity Committee (2011-16)}
+\cvlistitem {Mechanical Engineering (Human Factors) Faculty Search Committee (2014-15)}
+\cvlistitem {Lecture for the Admissions Office Voices of Tufts Program (2014)}
+\cvlistitem {Tufts Research Visualization Committee (2014)}
+\cvlistitem {School of Engineering Open House Faculty Panel (2012-2013)}
+
+\cvlistitemstart{Tufts Computer}
+{Diversity Committee (2019-present), Chair (2021-present)}
+\cvlistitemstart{Science}
+{Graduate Committee (2018-present)}
+\cvlistitem {PhD Admissions Committee (2020-present)}
+\cvlistitem {Faculty Mentoring (2017-18, 2020-present)}
+\cvlistitem {Faculty and Graduate Students Award Nomination (2019-present)}
+\cvlistitem {Faculty Search Committee for Human Data Interactions (2019-20)}
+\cvlistitem {Faculty Search Committee Chair for Data Systems (2017-19)}
+\cvlistitem {Lecturer Search Committee Chair (2017-19)}
+\cvlistitem {Professor of the Practice Search (Committee Chair) (2015-16)}
+\cvlistitem {Faculty Search Committee for Machine Learning (2016)}
+\cvlistitem {Graduate Student Orientation Organizer (2014-16)}
+\cvlistitem {Lecturer Search Committee (2015)}
+\cvlistitem {Colloquium Chair (2011-15)}
+\cvlistitem {Graduate Admission's Committee (2010-2015)}
+\cvlistitem {Lecturer Search Committee (2012-13)}
+\cvlistitem {Open House Committee (2011-12)}
+
+\cvlistitemstarttwo{Tufts Student}
+{Faculty Supervisor for the student-run electronic magazine \textit{Enigma : Tufts Journal of Data \& Computing} (2014-2015)}{Student Lead: Soubhik Barari}
+\cvlistitemtwo{Faculty Supervisor for the student-run \textit{Tufts Data Science Club} (2014-2015)}{Student Lead: Gideon Wulfsohn}
+\cvlistitemtwo{Judge for student-run Hackathon \textit{IDHack} (2015)}{Student Lead: Sam Purcell}
+
+\cvlistitemstart{UNC Charlotte} 
+{College of Computing and Informatics Research Strategic Planning Committee (2009)}
+\cvlistitem {College of Computing and Informatics Dean Search Committee (2008)}
+\closesection{}
+
+\section{Professional Memberships}
+\cvlistitemstart{Computing}{IEEE Computer Society}
+\cvlistitem{ACM (Association for Computing Machinery)}
+\cvlistitemstart{Honor}{Sigma Xi, The Scientific Research Society}
+\cvlistitem{Phi Kappa Phi Honor Society}
+\closesection{}
+
+\section{}
+\cvitem{Updated}{\today}
+\closesection{}
+
+\end{document}

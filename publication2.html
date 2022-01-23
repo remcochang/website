@@ -1,0 +1,95 @@
+<html> 
+<head> 
+    <title>Remco Chang</title> 
+    <link type="text/css" rel="stylesheet" href="remco-publication2.css"> 
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-11359407-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head> 
+ 
+<body> 
+
+
+<div class="row" id="page">
+ 
+<div class="column infop"> 
+
+  <br>
+  <div id="info">
+
+    <h1>Remco Chang</h1> 
+    <br>
+    <p class="contact">Associate Professor<br>
+      <a href="http://www.tufts.edu">Tufts University</a><br> 
+      <a href="http://www.cs.tufts.edu">Computer Science</a><br> 
+    </p>
+    <br>
+    <p class="contact"> 
+      Joyce Cummings Hall<br> 
+      177 College Avenue<br> 
+      Medford, MA 02155<br> 
+      (Office) 617-627-3681<br>
+      <!--(Lab) 617-627-6514<br>-->
+      remco_at_cs.tufts.edu
+    </p> 
+    <br>
+    <p class="contact">
+      <a href="vita.pdf">vita</a><br>
+      <a href="publication.html">publications</a><br>
+      <a href="students.html">students</a><br>
+      <a href="talks.html">talks</a><br>
+      <a href="grants.html">grants</a><br>
+      <a href="calendar.html">calendar</a><br>
+    </p>
+
+  </div>
+</div>
+
+<!------------column break-------------------------->
+
+<div class="column publications">
+</div>
+
+</body>
+
+
+
+
+<script src="js/d3.v3.min.js" charset="utf-8"></script>
+<script src="js/readhtml.js"></script>
+<script src="js/util.js"></script>    
+<script src="js/bibprinter.js"></script>
+<script src="js/bibparser.js"></script>
+
+<script>
+ var baseDir = "./CV/";
+ 
+ var jour = baseDir+"jour.bib";
+ var conf = baseDir+"conf.bib";
+ var book = baseDir+"book.bib";
+ var ws = baseDir+"workshop.bib";
+ var misc = baseDir+"misc.bib";
+ 
+ var bibloader = new bibFile();	
+ /*bibloader.load(jour, conf, book, ws, misc)
+	  .then(function(result) {
+	      console.log(bibloader.allEntries);
+	  });*/
+ var outcome = bibloader.load3(jour, conf, book, ws, misc);
+ console.log(outcome);
+ console.log(bibloader.allEntries);
+</script>
+
+
+</html>

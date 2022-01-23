@@ -1,0 +1,5 @@
+﻿title,image,text,purl1,pname1,purl2,pname2,purl3,pname3,purl4,pname4
+NN Architecture Search,remap.jpg,"We introduce REMAP, a system that helps a user perform guided search of neural network architectures",2019/VAST2019-REMAP.pdf,(VAST),,,,,,
+Effect of Latency,latency.jpg,A study of how latency in an interactive system affects a user's search behavior in a visualization interface.,2019/InfoVis2019-Latency.pdf,(InfoVis),,,,,,
+AutoML + VIS,snowcat.png,"A visual analytics system (Snowcat) that integrates AutoML for model construction, comparison, and selection.",2019/EuroVis2019-Snowcat.pdf,(EuroVis),2019/EuroVis2019-DIM.pdf,(EuroVis Short),,,,
+Kyrix,kyrix2.jpg,An optmized database + visualization system for web-based multi-canvas pan-zoom interfaces.,2019/EuroVis2019-Kyrix.pdf,(EuroVis),2019/VLDB2019-Kyrix.pdf,(VLDB),2020/VIS2020-KyrixS.pdf,(InfoVis),2022/CIDR2022-KyrixJ.pdf,(CIDR)

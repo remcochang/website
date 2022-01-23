@@ -1,0 +1,105 @@
+h1 {
+	padding-top: 16px;
+	font-family: Tahoma; 
+	font-size: 20px; 
+	font-weight: normal; 
+	color: #333333;	
+	margin: 0;
+}
+
+h2 {
+	font-family: Tahoma; 
+	font-size: 16px; 
+	font-weight: bold; 
+	color: #333333;	
+	margin-bottom: 8px;
+}
+
+
+p {
+	margin: 0;
+	font-family: Tahoma; 
+	font-size: 14px; 
+	font-weight: normal;
+}
+
+p.title{
+	font-size: 12px; 
+	font-weight: bold;
+}
+
+p.research, p.pub {
+	font-size: 12px; 
+}
+
+p.grants, p.talks {
+	font-size: 12px; 
+	padding-bottom: 8px;
+}
+
+tr {
+	/*width: 870px;*/
+}
+
+td {
+	width: 780px;
+	vertical-align: middle;
+	padding: 0px 15px 0px 0px;
+	margin: 0;
+	font-family: Tahoma; 
+	font-size: 12px; 
+	font-weight: normal;
+}
+
+td.toplevel {
+	width: 750px;
+}
+
+td.name {
+	width: 500px;	
+	font-weight:bold;
+	background-color: #e0e0e0;	
+}
+
+td.title {
+	width: 500px;	
+}
+
+td.date {
+	width: 100px;
+}
+
+td.location {
+	width: 100px;
+	background-color: #e0e0e0;	
+}
+
+td.ref {
+	width: 75px;
+	background-color: #e0e0e0;	
+}
+
+a:link, a:visited {
+  color: navy;
+  text-decoration: none;
+}
+
+a:hover {
+  color: navy;
+  text-decoration: underline;
+}
+
+#content {
+	margin: 0 0 0 0;
+}
+
+#info {
+	float: left;
+	width: 150px;	
+	text-align: right;
+	padding: 0 30px 0 0;
+}
+
+#page {
+	width: 1050px;
+}
