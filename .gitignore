@@ -1,3 +1,6 @@
+courses/
+publications/
+talks/
 *.pdf
 !vita.pdf
 *.mp4
@@ -8,3 +11,5 @@
 *.gz
 *.rar
 *.avi
+*.out
+*.log
