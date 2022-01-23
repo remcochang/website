@@ -1,4 +1,5 @@
 *.pdf
+!vita.pdf
 *.mp4
 *.mov
 *.pptx
