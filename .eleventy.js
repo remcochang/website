@@ -7,6 +7,7 @@ module.exports = function (config) {
     dir: {
       input: './',
       output: 'dist',
+      data: 'data'
     },
   };
 };
